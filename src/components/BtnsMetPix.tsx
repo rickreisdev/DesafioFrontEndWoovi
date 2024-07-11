@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../assets/img/LogoEnd.svg'
 import { Box, Button, Modal, Typography } from '@mui/material';
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import CheckIcon from '@mui/icons-material/Check'
 
 const BtnsMetPix = () => {
 
@@ -135,8 +136,8 @@ const BtnsMetPix = () => {
         });
     };
     return (
-        <>
-            <Box
+      <>
+       <Box
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -953,7 +954,7 @@ const BtnsMetPix = () => {
                     </Box>
                 </Box>
             </Modal>
-        </>
+      </>
     )
 }
 
