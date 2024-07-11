@@ -150,6 +150,7 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '137px',
                         border: isActive1 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive1 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '10px',
                         mb: '35px'
                     }}
@@ -158,7 +159,6 @@ export default function BtnMetodoPix() {
                     <Box
                         sx={{
                             position: 'relative',
-                            background: '#FFFFFF'
                         }}
                     >
                         <Box
@@ -301,6 +301,7 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '105px',
                         border: isActive ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '10px 10px 0 0'
                     }}
                     onClick={handleButtonClick}
@@ -308,7 +309,6 @@ export default function BtnMetodoPix() {
                     <Box
                         sx={{
                             position: 'relative',
-                            background: '#FFFFFF'
                         }}
                     >
                         <Box
@@ -407,14 +407,14 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '100px',
                         border: isActive2 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive2 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
                     onClick={handleButtonClick2}
                 >
                     <Box
                         sx={{
-                            position: 'relative',
-                            background: '#FFFFFF'
+                            position: 'relative'
                         }}
                     >
 
@@ -492,6 +492,7 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '137px',
                         border: isActive3 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive3 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
                     onClick={handleButtonClick3}
@@ -499,7 +500,6 @@ export default function BtnMetodoPix() {
                     <Box
                         sx={{
                             position: 'relative',
-                            background: '#FFFFFF'
                         }}
                     >
 
@@ -621,14 +621,14 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '100px',
                         border: isActive4 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive4 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
                     onClick={handleButtonClick4}
                 >
                     <Box
                         sx={{
-                            position: 'relative',
-                            background: '#FFFFFF'
+                            position: 'relative'
                         }}
                     >
 
@@ -706,14 +706,14 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '100px',
                         border: isActive5 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive5 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
                     onClick={handleButtonClick5}
                 >
                     <Box
                         sx={{
-                            position: 'relative',
-                            background: '#FFFFFF'
+                            position: 'relative'
                         }}
                     >
 
@@ -791,14 +791,14 @@ export default function BtnMetodoPix() {
                         width: '429px',
                         height: '100px',
                         border: isActive6 ? '2px solid #03D69D' : '2px solid #E5E5E5',
+                        background: isActive6 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
                     onClick={handleButtonClick6}
                 >
                     <Box
                         sx={{
-                            position: 'relative',
-                            background: '#FFFFFF'
+                            position: 'relative'
                         }}
                     >
 
@@ -908,27 +908,47 @@ export default function BtnMetodoPix() {
                 aria-describedby="modal-modal-description"
             >
                 <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
                     sx={{
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
                         width: 350,
-                        bgcolor: 'background.paper',
-                        border: '2px solid #000',
-                        boxShadow: 10,
-                        p: 4,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
                     }}>
-                    <Typography id="modal-modal-title" variant="h6">
+
+                    <Typography variant="h6" textAlign="center">
                         Tem certeza que deseja parcelar a compra em 2 (duas) vezes no Pix?
                     </Typography>
 
-                    <Box>
-                        <Button onClick={() => navigate('qr-code')}>
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code')}
+                            color='success'
+                            variant='contained'
+                        >
                             Sim
                         </Button>
 
-                        <Button onClick={handleModalClose}>
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
                             Não
                         </Button>
                     </Box>
