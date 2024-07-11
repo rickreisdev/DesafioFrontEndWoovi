@@ -7,7 +7,6 @@ export default function InfoTotal() {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
-            width="95%"
             mb="10px"
             sx={{
                 borderTop: '2px solid #E5E5E5',
