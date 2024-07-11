@@ -2,7 +2,6 @@ import { Box, Grid, Typography } from '@mui/material';
 import Logo from '../components/Logo';
 import BtnMetodoPix from '../components/BtnsMetPix';
 
-
 const PaymentMethod = () => {
   const nome = 'João';
 
