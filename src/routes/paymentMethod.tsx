@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import Logo from '../components/Logo';
-import BtnMetodoPix from '../components/BtnMetPix';
-import BtnMetodoPixParc from '../components/BtnMetPixPar';
+import BtnMetodoPix from '../components/BtnsMetPix';
+
 
 const PaymentMethod = () => {
   const nome = 'João';
@@ -47,8 +47,6 @@ const PaymentMethod = () => {
           gap="35px"
         >
           <BtnMetodoPix />
-
-          <BtnMetodoPixParc />
         </Box>
 
       </div>

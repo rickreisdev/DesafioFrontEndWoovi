@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material'
 import theme from './theme.ts'
 import PaymentMethod from './routes/paymentMethod.tsx'
+import { QrCode } from '@mui/icons-material'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Router>
         <Routes>
           <Route path='/' element={<PaymentMethod />} />
+          <Route path='qr-code' element={<QrCode />} />
         </Routes>
       </Router>
     </ThemeProvider>
