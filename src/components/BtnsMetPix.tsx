@@ -1002,7 +1002,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate('qr-code')}
+                            onClick={() => navigate('qr-code1')}
                             color='success'
                             variant='contained'
                         >
@@ -1057,6 +1057,222 @@ const BtnsMetPix = () => {
                     >
                         <Button
                             onClick={() => navigate('qr-code2')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+
+            <Modal className='3'
+                open={openModal === 3}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja parcelar a compra em 4 (quatro) vezes?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code3')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+
+            <Modal className='4'
+                open={openModal === 4}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja parcelar a compra em 5 (cinco) vezes?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code4')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+
+            <Modal className='5'
+                open={openModal === 5}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja parcelar a compra em 6 (seis) vezes?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code5')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+
+            <Modal className='6'
+                open={openModal === 6}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja parcelar a compra em 7 (sete) vezes?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code6')}
                             color='success'
                             variant='contained'
                         >

@@ -3,14 +3,14 @@ import Logo from "../components/Logo"
 import QRCodeImg from "../components/qrCodeComponent";
 import BtnCopiarPix from "../components/BtnCopiar";
 import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal2 } from "../components/InfoTotal";
+import { InfoTotal5 } from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 
 import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix2 } from "../components/ProgressoPix";
+import { ProgressoPix5 } from "../components/ProgressoPix";
 import BtnVoltar from "../components/BtnVoltar";
 
-const QrCodePage2 = () => {
+const QrCodePage5 = () => {
     const nome = 'João';
 
     return (
@@ -39,7 +39,7 @@ const QrCodePage2 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.310,00 pelo Pix
+                        {nome}, pague a entrada de R$ 15.849,99 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -82,9 +82,9 @@ const QrCodePage2 = () => {
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix2 />
+                    <ProgressoPix5 />
 
-                    <InfoTotal2 />
+                    <InfoTotal5 />
 
                     <Box
                         display="flex"
@@ -155,4 +155,4 @@ const QrCodePage2 = () => {
     )
 }
 
-export default QrCodePage2
+export default QrCodePage5

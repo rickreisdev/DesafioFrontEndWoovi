@@ -56,7 +56,7 @@ export default function BtnCopiarPix() {
                     height: '39px',
                     borderRadius: '8px',
                     mt: '20px',
-                    mb: '35px'
+                    mb: '10px'
                 }}
             >
                 Clique para copiar o QR CODE

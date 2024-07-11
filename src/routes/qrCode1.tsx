@@ -3,15 +3,15 @@ import Logo from "../components/Logo"
 import QRCodeImg from "../components/qrCodeComponent";
 import BtnCopiarPix from "../components/BtnCopiar";
 import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal2 } from "../components/InfoTotal";
+import { InfoTotal1 } from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
-
 import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix2 } from "../components/ProgressoPix";
 import BtnVoltar from "../components/BtnVoltar";
 
-const QrCodePage2 = () => {
+const QrCodePage1 = () => {
     const nome = 'João';
+    const valor = 30500.00
+    const cachback = valor * 0.03
 
     return (
         <Grid
@@ -39,7 +39,7 @@ const QrCodePage2 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.310,00 pelo Pix
+                        {nome}, pague a vista o valor de R$ 30.500,00 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -56,7 +56,7 @@ const QrCodePage2 = () => {
 
                     <BtnCopiarPix />
 
-                    <BtnVoltar/>
+                    <BtnVoltar />
 
                     <Typography
                         sx={{
@@ -77,14 +77,26 @@ const QrCodePage2 = () => {
                             lineHeight: '21.82px',
                             fontWeight: '600',
                             textTransform: 'none',
+                            mb: '25px'
                         }}
                     >
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix2 />
+                    <Typography
+                        sx={{
+                            color: '#4D4D4D',
+                            fontSize: '16px',
+                            lineHeight: '21.82px',
+                            fontWeight: '600',
+                            textTransform: 'none',
+                            mb: '25px'
+                        }}
+                    >
+                        Você vai receber <span className="green">R$ {cachback},00</span> de cashback!
+                    </Typography>
 
-                    <InfoTotal2 />
+                    <InfoTotal1 />
 
                     <Box
                         display="flex"
@@ -155,4 +167,4 @@ const QrCodePage2 = () => {
     )
 }
 
-export default QrCodePage2
+export default QrCodePage1

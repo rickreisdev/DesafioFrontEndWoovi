@@ -7,10 +7,10 @@ import { InfoTotal2 } from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 
 import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix2 } from "../components/ProgressoPix";
+import { ProgressoPix4 } from "../components/ProgressoPix";
 import BtnVoltar from "../components/BtnVoltar";
 
-const QrCodePage2 = () => {
+const QrCodePage4 = () => {
     const nome = 'João';
 
     return (
@@ -39,7 +39,7 @@ const QrCodePage2 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.310,00 pelo Pix
+                        {nome}, pague a entrada de R$ 15.750,00 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -82,7 +82,7 @@ const QrCodePage2 = () => {
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix2 />
+                    <ProgressoPix4 />
 
                     <InfoTotal2 />
 
@@ -155,4 +155,4 @@ const QrCodePage2 = () => {
     )
 }
 
-export default QrCodePage2
+export default QrCodePage4

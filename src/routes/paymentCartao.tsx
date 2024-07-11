@@ -1,12 +1,12 @@
 import { Box, Grid, Typography } from '@mui/material'
 import Logo from '../components/Logo'
 import FormComponent from '../components/FormComponent';
-import InfoTotal from '../components/InfoTotal';
 import AccordionFuncionamento from '../components/AccordionFunc';
 import ProgressoCartao from '../components/ProgressoCartao';
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 
 import logo from '../assets/img/LogoEnd.svg'
+import { InfoTotal } from '../components/InfoTotal';
 
 const PaymentCartao = () => {
     const nome = 'João';

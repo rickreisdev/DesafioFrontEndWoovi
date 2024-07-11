@@ -3,11 +3,12 @@ import Logo from "../components/Logo"
 import QRCodeImg from "../components/qrCodeComponent";
 import BtnCopiarPix from "../components/BtnCopiar";
 import AccordionFuncionamento from "../components/AccordionFunc";
-import InfoTotal from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 
 import logo from '../assets/img/LogoEnd.svg'
 import { ProgressoPix } from "../components/ProgressoPix";
+import { InfoTotal } from "../components/InfoTotal";
+import BtnVoltar from "../components/BtnVoltar";
 
 const QrCodePage = () => {
   const nome = 'João';
@@ -54,6 +55,8 @@ const QrCodePage = () => {
           <QRCodeImg />
 
           <BtnCopiarPix />
+
+          <BtnVoltar/>
 
           <Typography
             sx={{
