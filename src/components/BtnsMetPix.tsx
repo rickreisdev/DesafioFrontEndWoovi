@@ -898,7 +898,6 @@ export default function BtnMetodoPix() {
                         <img src={logo} alt="logo da woovi" />
                     </Box>
                 </Box>
-
             </Box>
 
             <Modal

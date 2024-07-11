@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function ProgressoPix() {
     return (
@@ -8,7 +9,7 @@ export default function ProgressoPix() {
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
-                mt="15px"
+                mt="20px"
                 mb="25px"
                 gap="15px"
             >
@@ -29,17 +30,16 @@ export default function ProgressoPix() {
                     >
                         <Box sx={{
                             position: 'relative',
-                            zIndex: '1000',
-                            border: '2px solid #03D69D',
-                            borderRadius: '50%',
-                            width: '16px',
-                            height: '16px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#03D69D',
                             '::after': {
                                 content: '""',
                                 display: 'block',
                                 position: 'absolute',
-                                top: '27px',
-                                left: '-2.8px',
+                                top: '32px',
+                                left: '1px',
                                 width: '21.1px',
                                 height: '2px',
                                 transform: 'rotate(90deg)',
@@ -47,6 +47,7 @@ export default function ProgressoPix() {
                             }
                         }}
                         >
+                            <CheckCircleIcon />
                         </Box>
 
                         <Typography
@@ -87,22 +88,30 @@ export default function ProgressoPix() {
                 >
                     <Box
                         display="flex"
+                        position='relative'
                         flexDirection="row"
                         justifyContent="center"
                         alignItems="center"
                         gap="5px"
                     >
                         <Box sx={{
-                            border: '2px solid #E5E5E5',
+                            display: 'flex',
+                            position: 'absolute',
+                            left: '2px',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            border: '2px solid #03D69D',
                             borderRadius: '50%',
                             width: '16px',
                             height: '16px'
-                        }}>
+                        }}
+                        >
                         </Box>
 
                         <Typography
                             sx={{
                                 display: "flex",
+                                ml: '30px',
                                 color: '#4D4D4D',
                                 fontSize: '18px',
                                 lineHeight: '24.55px',
