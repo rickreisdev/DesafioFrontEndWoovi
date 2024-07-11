@@ -690,6 +690,7 @@ export default function BtnMetodoPixParc() {
                 alignItems="center"
                 justifyContent="center"
             >
+               
             </Box>
 
         </Box>
