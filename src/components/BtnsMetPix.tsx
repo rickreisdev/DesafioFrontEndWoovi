@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../assets/img/LogoEnd.svg'
 import { Box, Button, Modal, Typography } from '@mui/material';
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
-import CheckIcon from '@mui/icons-material/Check';
 
-export default function BtnMetodoPix() {
+const BtnsMetPix = () => {
+
     const [isActive1, setIsActive1] = useState(false);
     const [isActive, setIsActive] = useState(false);
     const [isActive2, setIsActive2] = useState(false);
@@ -134,14 +134,14 @@ export default function BtnMetodoPix() {
             return nextState;
         });
     };
-
-
     return (
-        <div>
+        <>
             <Box
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                 }}
             >
                 <Button
@@ -953,6 +953,8 @@ export default function BtnMetodoPix() {
                     </Box>
                 </Box>
             </Modal>
-        </div>
-    );
+        </>
+    )
 }
+
+export default BtnsMetPix

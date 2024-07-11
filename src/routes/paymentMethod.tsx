@@ -20,6 +20,7 @@ const PaymentMethod = () => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
+          mb="40px"
         >
           <Logo />
 
@@ -40,7 +41,6 @@ const PaymentMethod = () => {
         <Box
           mt={4}
           display="flex"
-          flexDirection="column"
           justifyContent="center"
           alignItems="center"
           gap="35px"
