@@ -14,7 +14,9 @@ export default function BtnCopiarPix() {
                     textTransform: 'none',
                     width: '310px',
                     height: '39px',
-                    borderRadius: '8px'
+                    borderRadius: '8px',
+                    mt: '20px',
+                    mb: '35px'
                 }}
             >
                 Clique para copiar o QR CODE

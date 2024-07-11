@@ -10,7 +10,6 @@ export default function ProgressoPix() {
                 alignItems="center"
                 mt="15px"
                 mb="25px"
-                width="100%"
                 gap="15px"
             >
                 <Box
@@ -18,7 +17,7 @@ export default function ProgressoPix() {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100vw"
+                    width="100%"
                 >
                     <Box
                         display="flex"
@@ -26,7 +25,6 @@ export default function ProgressoPix() {
                         justifyContent="center"
                         alignItems="center"
                         gap="5px"
-                        px='18px'
                     >
                         <Box sx={{
                             position: 'relative',
@@ -73,7 +71,6 @@ export default function ProgressoPix() {
                             lineHeight: '24.55px',
                             fontWeight: '600',
                             textTransform: 'none',
-                            px: '18px'
                         }}
                     >
                         <span>R$ 15.300,00</span>
@@ -85,7 +82,8 @@ export default function ProgressoPix() {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100vw"
+                    gap="170px"
+                    width="100%"
                 >
                     <Box
                         display="flex"
@@ -93,7 +91,6 @@ export default function ProgressoPix() {
                         justifyContent="center"
                         alignItems="center"
                         gap="5px"
-                        px="18px"
                     >
                         <Box sx={{
                             border: '2px solid #E5E5E5',
@@ -124,8 +121,7 @@ export default function ProgressoPix() {
                             fontSize: '18px',
                             lineHeight: '24.55px',
                             fontWeight: '600',
-                            textTransform: 'none',
-                            px: "18px"
+                            textTransform: 'none'
                         }}
                     >
                         <span>R$ 15.300,00</span>
