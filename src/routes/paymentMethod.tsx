@@ -49,9 +49,7 @@ const PaymentMethod = () => {
         </Box>
 
       </div>
-
     </Grid>
-
   )
 }
 

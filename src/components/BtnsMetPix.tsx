@@ -463,7 +463,7 @@ const BtnsMetPix = () => {
                                     whiteSpace: 'nowrap'
                                 }}
                             >
-                                <span>3x</span> R$ 10.196,66
+                                <span>3x</span> R$ 10.206,67
                             </Typography>
 
                             <Typography
@@ -480,7 +480,7 @@ const BtnsMetPix = () => {
                                     whiteSpace: 'nowrap'
                                 }}
                             >
-                                Total: R$ 30.620,00
+                                Total: R$ 30.620,01
                             </Typography>
                         </Box>
 
@@ -847,7 +847,7 @@ const BtnsMetPix = () => {
                                     whiteSpace: 'nowrap'
                                 }}
                             >
-                                <span>7x</span> R$ 4.542,85
+                                <span>7x</span> R$ 4.542,86
                             </Typography>
 
                             <Typography
@@ -864,7 +864,7 @@ const BtnsMetPix = () => {
                                     whiteSpace: 'nowrap'
                                 }}
                             >
-                                Total: R$ 31.800,00
+                                Total: R$ 31.800,02
                             </Typography>
                         </Box>
 
@@ -926,7 +926,7 @@ const BtnsMetPix = () => {
                     }}>
 
                     <Typography variant="h6" textAlign="center">
-                        Tem certeza que deseja parcelar a compra em 2 (duas) vezes no Pix?
+                        Tem certeza que deseja parcelar a compra em 2 (duas) vezes?
                     </Typography>
 
                     <Box
