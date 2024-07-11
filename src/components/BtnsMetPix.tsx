@@ -7,23 +7,28 @@ import CheckIcon from '@mui/icons-material/Check'
 
 const BtnsMetPix = () => {
 
-    const [isActive1, setIsActive1] = useState(false);
-    const [isActive, setIsActive] = useState(false);
-    const [isActive2, setIsActive2] = useState(false);
-    const [isActive3, setIsActive3] = useState(false);
-    const [isActive4, setIsActive4] = useState(false);
-    const [isActive5, setIsActive5] = useState(false);
-    const [isActive6, setIsActive6] = useState(false);
+    const [isActive, setIsActive] = useState<boolean>(false);
+    const [isActive1, setIsActive1] = useState<boolean>(false);
+    const [isActive2, setIsActive2] = useState<boolean>(false);
+    const [isActive3, setIsActive3] = useState<boolean>(false);
+    const [isActive4, setIsActive4] = useState<boolean>(false);
+    const [isActive5, setIsActive5] = useState<boolean>(false);
+    const [isActive6, setIsActive6] = useState<boolean>(false);
 
     const navigate = useNavigate();
-    const [openModal, setOpenModal] = useState(false);
+    const [openModal, setOpenModal] = useState<number | null>(null);
 
     const handleModalClose = () => {
-        setOpenModal(false)
-        setIsActive(false);
+        setOpenModal(null)
+        setIsActive1(false);
+        setIsActive2(false);
+        setIsActive3(false);
+        setIsActive4(false);
+        setIsActive5(false);
+        setIsActive6(false);
     };
 
-    const handleButtonClick1 = () => {
+    const handleButtonClick1 = (modalNumber: number) => {
         setIsActive1(prevState => {
             const nextState = !prevState;
 
@@ -37,9 +42,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick = () => {
+    const handleButtonClick = (modalNumber: number) => {
         setIsActive(prevState => {
             const nextState = !prevState;
 
@@ -53,10 +59,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
-        setOpenModal(true)
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick2 = () => {
+    const handleButtonClick2 = (modalNumber: number) => {
         setIsActive2(prevState => {
             const nextState = !prevState;
 
@@ -70,9 +76,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick3 = () => {
+    const handleButtonClick3 = (modalNumber: number) => {
         setIsActive3(prevState => {
             const nextState = !prevState;
 
@@ -86,9 +93,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick4 = () => {
+    const handleButtonClick4 = (modalNumber: number) => {
         setIsActive4(prevState => {
             const nextState = !prevState;
 
@@ -102,9 +110,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick5 = () => {
+    const handleButtonClick5 = (modalNumber: number) => {
         setIsActive5(prevState => {
             const nextState = !prevState;
 
@@ -118,9 +127,10 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
 
-    const handleButtonClick6 = () => {
+    const handleButtonClick6 = (modalNumber: number) => {
         setIsActive6(prevState => {
             const nextState = !prevState;
 
@@ -134,10 +144,12 @@ const BtnsMetPix = () => {
             }
             return nextState;
         });
+        setOpenModal(modalNumber)
     };
+
     return (
-      <>
-       <Box
+        <>
+            <Box
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -155,7 +167,7 @@ const BtnsMetPix = () => {
                         borderRadius: '10px',
                         mb: '35px'
                     }}
-                    onClick={handleButtonClick1}
+                    onClick={() => handleButtonClick1(1)}
                 >
                     <Box
                         sx={{
@@ -305,7 +317,7 @@ const BtnsMetPix = () => {
                         background: isActive ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '10px 10px 0 0'
                     }}
-                    onClick={handleButtonClick}
+                    onClick={() => handleButtonClick(0)}
                 >
                     <Box
                         sx={{
@@ -411,7 +423,7 @@ const BtnsMetPix = () => {
                         background: isActive2 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
-                    onClick={handleButtonClick2}
+                    onClick={() => handleButtonClick2(2)}
                 >
                     <Box
                         sx={{
@@ -496,7 +508,7 @@ const BtnsMetPix = () => {
                         background: isActive3 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
-                    onClick={handleButtonClick3}
+                    onClick={() => handleButtonClick3(3)}
                 >
                     <Box
                         sx={{
@@ -625,7 +637,7 @@ const BtnsMetPix = () => {
                         background: isActive4 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
-                    onClick={handleButtonClick4}
+                    onClick={() => handleButtonClick4(4)}
                 >
                     <Box
                         sx={{
@@ -710,7 +722,7 @@ const BtnsMetPix = () => {
                         background: isActive5 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
-                    onClick={handleButtonClick5}
+                    onClick={() => handleButtonClick5(5)}
                 >
                     <Box
                         sx={{
@@ -795,7 +807,7 @@ const BtnsMetPix = () => {
                         background: isActive6 ? '#F4FBF9' : '#FFFFFF',
                         borderRadius: '0'
                     }}
-                    onClick={handleButtonClick6}
+                    onClick={() => handleButtonClick6(6)}
                 >
                     <Box
                         sx={{
@@ -867,7 +879,6 @@ const BtnsMetPix = () => {
                                 Total: R$ 31.800,02
                             </Typography>
                         </Box>
-
                     </Box>
                 </Button >
 
@@ -901,8 +912,8 @@ const BtnsMetPix = () => {
                 </Box>
             </Box>
 
-            <Modal
-                open={openModal}
+            <Modal className='0'
+                open={openModal === 0}
                 onClose={handleModalClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
@@ -954,7 +965,115 @@ const BtnsMetPix = () => {
                     </Box>
                 </Box>
             </Modal>
-      </>
+
+            <Modal className='1'
+                open={openModal === 1}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja pagar a compra por Pix a vista?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+
+            <Modal className='2'
+                open={openModal === 2}
+                onClose={handleModalClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyItems="center"
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 350,
+                        bgcolor: '#F4FBF9',
+                        border: '2px solid #03D69D',
+                        borderRadius: '10px',
+                        boxShadow: 5,
+                        p: 3,
+                    }}>
+
+                    <Typography variant="h6" textAlign="center">
+                        Tem certeza que deseja parcelar a compra em 3 (três) vezes?
+                    </Typography>
+
+                    <Box
+                        mt="15px"
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                    >
+                        <Button
+                            onClick={() => navigate('qr-code2')}
+                            color='success'
+                            variant='contained'
+                        >
+                            Sim
+                        </Button>
+
+                        <Button
+                            onClick={handleModalClose}
+                            color='error'
+                            variant='contained'
+                        >
+                            Não
+                        </Button>
+                    </Box>
+                </Box>
+            </Modal>
+        </>
     )
 }
 

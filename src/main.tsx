@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import PaymentMethod from './routes/paymentMethod.tsx'
 import QrCodePage from './routes/qrCode.tsx'
 import PaymentCartao from './routes/paymentCartao.tsx'
+import QrCodePage2 from './routes/qrCode2.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path='/' element={<PaymentMethod />} />
           <Route path='qr-code' element={<QrCodePage />} />
+          <Route path='qr-code2' element={<QrCodePage2 />} />
           <Route path='/cartao' element={<PaymentCartao />} />
         </Routes>
       </Router>
