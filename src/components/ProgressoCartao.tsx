@@ -12,14 +12,14 @@ const ProgressoCartao = () => {
                 mt="20px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -84,7 +84,7 @@ const ProgressoCartao = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -152,14 +152,14 @@ const ProgressoCartao2 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -224,7 +224,7 @@ const ProgressoCartao2 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -259,7 +259,7 @@ const ProgressoCartao2 = () => {
                                 textTransform: "none",
                             }}
                         >
-                            2º no Cartão
+                            2ª no Cartão
                         </Typography>
                     </Box>
 
@@ -282,7 +282,7 @@ const ProgressoCartao2 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -321,6 +321,7 @@ const ProgressoCartao2 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: "5px",
                             }}
                         >
                             3ª no Cartão
@@ -356,14 +357,14 @@ const ProgressoCartao3 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -428,7 +429,7 @@ const ProgressoCartao3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -486,7 +487,7 @@ const ProgressoCartao3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -502,6 +503,7 @@ const ProgressoCartao3 = () => {
                                 borderRadius: "50%",
                                 width: "16px",
                                 height: "16px",
+                                ml: '2px',
                                 "::before": {
                                     content: '""',
                                     display: "block",
@@ -524,6 +526,7 @@ const ProgressoCartao3 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px',
                             }}
                         >
                             3ª no Cartão
@@ -549,7 +552,7 @@ const ProgressoCartao3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -565,6 +568,7 @@ const ProgressoCartao3 = () => {
                                 borderRadius: "50%",
                                 width: "16px",
                                 height: "16px",
+                                ml: '2px',
                                 "::before": {
                                     content: '""',
                                     display: "block",
@@ -587,6 +591,7 @@ const ProgressoCartao3 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px',
                             }}
                         >
                             4ª no Cartão
@@ -622,14 +627,14 @@ const ProgressoCartao4 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -694,7 +699,7 @@ const ProgressoCartao4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -752,7 +757,7 @@ const ProgressoCartao4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -768,6 +773,7 @@ const ProgressoCartao4 = () => {
                                 borderRadius: "50%",
                                 width: "16px",
                                 height: "16px",
+                                ml: '2px',
                                 "::before": {
                                     content: '""',
                                     display: "block",
@@ -790,6 +796,7 @@ const ProgressoCartao4 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             3ª no Cartão
@@ -815,7 +822,7 @@ const ProgressoCartao4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -831,6 +838,7 @@ const ProgressoCartao4 = () => {
                                 borderRadius: "50%",
                                 width: "16px",
                                 height: "16px",
+                                ml: '2px',
                                 "::before": {
                                     content: '""',
                                     display: "block",
@@ -853,6 +861,7 @@ const ProgressoCartao4 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px',
                             }}
                         >
                             4ª no Cartão
@@ -878,7 +887,7 @@ const ProgressoCartao4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -894,6 +903,7 @@ const ProgressoCartao4 = () => {
                                 borderRadius: "50%",
                                 width: "16px",
                                 height: "16px",
+                                ml: '2px',
                                 "::before": {
                                     content: '""',
                                     display: "block",
@@ -916,6 +926,7 @@ const ProgressoCartao4 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px',
                             }}
                         >
                             5ª no Cartão
@@ -951,14 +962,14 @@ const ProgressoCartao5 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1023,7 +1034,7 @@ const ProgressoCartao5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1081,7 +1092,7 @@ const ProgressoCartao5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1119,6 +1130,7 @@ const ProgressoCartao5 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             3ª no Cartão
@@ -1144,7 +1156,7 @@ const ProgressoCartao5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1182,6 +1194,7 @@ const ProgressoCartao5 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             4ª no Cartão
@@ -1207,7 +1220,7 @@ const ProgressoCartao5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1245,6 +1258,7 @@ const ProgressoCartao5 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             5ª no Cartão
@@ -1270,7 +1284,7 @@ const ProgressoCartao5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1308,6 +1322,7 @@ const ProgressoCartao5 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             6ª no Cartão
@@ -1343,14 +1358,14 @@ const ProgressoCartao6 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1415,7 +1430,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1473,7 +1488,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1512,6 +1527,7 @@ const ProgressoCartao6 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             3ª no Cartão
@@ -1537,7 +1553,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1576,6 +1592,7 @@ const ProgressoCartao6 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             4ª no Cartão
@@ -1601,7 +1618,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1640,6 +1657,7 @@ const ProgressoCartao6 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             5ª no Cartão
@@ -1665,7 +1683,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1704,6 +1722,7 @@ const ProgressoCartao6 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             6ª no Cartão
@@ -1729,7 +1748,7 @@ const ProgressoCartao6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1768,6 +1787,7 @@ const ProgressoCartao6 = () => {
                                 lineHeight: "24.55px",
                                 fontWeight: "600",
                                 textTransform: "none",
+                                ml: '4px'
                             }}
                         >
                             7ª no Cartão
