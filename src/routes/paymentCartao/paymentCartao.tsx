@@ -1,12 +1,12 @@
 import { Box, Grid, Typography } from '@mui/material'
-import Logo from '../components/Logo'
-import FormComponent from '../components/FormComponent';
-import AccordionFuncionamento from '../components/AccordionFunc';
-import ProgressoCartao from '../components/ProgressoCartao';
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
-
-import logo from '../assets/img/LogoEnd.svg'
-import { InfoTotal } from '../components/InfoTotal';
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from '../../components/Logo';
+import { ProgressoCartao } from '../../components/ProgressoCartao';
+import { InfoTotal } from '../../components/InfoTotal';
+import AccordionFuncionamento from '../../components/AccordionFunc';
+import { FormComponent } from '../../components/FormComponent';
+import BtnVoltar2 from '../../components/BtnVoltar2';
 
 const PaymentCartao = () => {
     const nome = 'João';
@@ -60,6 +60,8 @@ const PaymentCartao = () => {
                         <FormComponent />
                     </Box>
                 </div>
+
+                <BtnVoltar2/>
 
                 <Typography
                     sx={{

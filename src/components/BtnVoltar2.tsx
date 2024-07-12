@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-const BtnVoltar = () => {
+const BtnVoltar2 = () => {
     const [openModal, setOpenModal] = useState(false);
     const navigate = useNavigate();
 
@@ -60,7 +60,7 @@ const BtnVoltar = () => {
                     }}>
 
                     <Typography variant="h6" textAlign="center">
-                        Tem certeza que deseja voltar para a seleção de parcelas?
+                        Tem certeza que deseja voltar para a página anterior?
                     </Typography>
 
                     <Box
@@ -92,4 +92,4 @@ const BtnVoltar = () => {
     )
 }
 
-export default BtnVoltar
+export default BtnVoltar2

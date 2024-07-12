@@ -1,16 +1,15 @@
 import { Box, Grid, Typography } from "@mui/material"
-import Logo from "../components/Logo"
-import QRCodeImg from "../components/qrCodeComponent";
-import BtnCopiarPix from "../components/BtnCopiar";
-import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal6 } from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from "../../components/Logo";
+import QRCodeImg from "../../components/qrCodeComponent";
+import BtnVoltar from "../../components/BtnVoltar";
+import { ProgressoPix3 } from "../../components/ProgressoPix";
+import { InfoTotal3 } from "../../components/InfoTotal";
+import AccordionFuncionamento from "../../components/AccordionFunc";
+import { BtnCopiarPix3 } from "../../components/BtnCopiar";
 
-import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix6 } from "../components/ProgressoPix";
-import BtnVoltar from "../components/BtnVoltar";
-
-const QrCodePage6 = () => {
+const QrCodePage3 = () => {
     const nome = 'João';
 
     return (
@@ -39,7 +38,7 @@ const QrCodePage6 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.900,01 pelo Pix
+                        {nome}, pague a entrada de R$ 15.450,00 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -54,7 +53,7 @@ const QrCodePage6 = () => {
 
                     <QRCodeImg />
 
-                    <BtnCopiarPix />
+                    <BtnCopiarPix3 />
 
                     <BtnVoltar/>
 
@@ -82,9 +81,9 @@ const QrCodePage6 = () => {
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix6/>
+                    <ProgressoPix3 />
 
-                    <InfoTotal6 />
+                    <InfoTotal3 />
 
                     <Box
                         display="flex"
@@ -155,4 +154,4 @@ const QrCodePage6 = () => {
     )
 }
 
-export default QrCodePage6
+export default QrCodePage3

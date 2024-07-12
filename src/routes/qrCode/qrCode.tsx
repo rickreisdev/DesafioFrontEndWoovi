@@ -1,14 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material"
-import Logo from "../components/Logo"
-import QRCodeImg from "../components/qrCodeComponent";
-import BtnCopiarPix from "../components/BtnCopiar";
-import AccordionFuncionamento from "../components/AccordionFunc";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from "../../components/Logo";
+import QRCodeImg from "../../components/qrCodeComponent";
+import BtnVoltar from "../../components/BtnVoltar";
+import { ProgressoPix } from "../../components/ProgressoPix";
+import { InfoTotal } from "../../components/InfoTotal";
+import AccordionFuncionamento from "../../components/AccordionFunc";
+import { BtnCopiarPix } from "../../components/BtnCopiar";
 
-import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix } from "../components/ProgressoPix";
-import { InfoTotal } from "../components/InfoTotal";
-import BtnVoltar from "../components/BtnVoltar";
 
 const QrCodePage = () => {
   const nome = 'João';

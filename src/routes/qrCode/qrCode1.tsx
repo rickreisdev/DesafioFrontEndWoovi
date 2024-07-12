@@ -1,17 +1,17 @@
 import { Box, Grid, Typography } from "@mui/material"
-import Logo from "../components/Logo"
-import QRCodeImg from "../components/qrCodeComponent";
-import BtnCopiarPix from "../components/BtnCopiar";
-import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal5 } from "../components/InfoTotal";
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from "../../components/Logo";
+import QRCodeImg from "../../components/qrCodeComponent";
+import BtnVoltar from "../../components/BtnVoltar";
+import { InfoTotal1 } from "../../components/InfoTotal";
+import AccordionFuncionamento from "../../components/AccordionFunc";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import { BtnCopiarPix1 } from "../../components/BtnCopiar";
 
-import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix5 } from "../components/ProgressoPix";
-import BtnVoltar from "../components/BtnVoltar";
-
-const QrCodePage5 = () => {
+const QrCodePage1 = () => {
     const nome = 'João';
+    const valor = 30500.00
+    const cachback = valor * 0.03
 
     return (
         <Grid
@@ -39,7 +39,7 @@ const QrCodePage5 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.849,99 pelo Pix
+                        {nome}, pague a vista o valor de R$ 30.500,00 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -54,9 +54,9 @@ const QrCodePage5 = () => {
 
                     <QRCodeImg />
 
-                    <BtnCopiarPix />
+                    <BtnCopiarPix1 />
 
-                    <BtnVoltar/>
+                    <BtnVoltar />
 
                     <Typography
                         sx={{
@@ -77,14 +77,26 @@ const QrCodePage5 = () => {
                             lineHeight: '21.82px',
                             fontWeight: '600',
                             textTransform: 'none',
+                            mb: '25px'
                         }}
                     >
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix5 />
+                    <Typography
+                        sx={{
+                            color: '#4D4D4D',
+                            fontSize: '16px',
+                            lineHeight: '21.82px',
+                            fontWeight: '600',
+                            textTransform: 'none',
+                            mb: '25px'
+                        }}
+                    >
+                        Você vai receber <span className="green">R$ {cachback},00</span> de cashback!
+                    </Typography>
 
-                    <InfoTotal5 />
+                    <InfoTotal1 />
 
                     <Box
                         display="flex"
@@ -155,4 +167,4 @@ const QrCodePage5 = () => {
     )
 }
 
-export default QrCodePage5
+export default QrCodePage1

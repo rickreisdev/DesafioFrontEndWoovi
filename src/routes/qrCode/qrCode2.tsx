@@ -1,16 +1,15 @@
 import { Box, Grid, Typography } from "@mui/material"
-import Logo from "../components/Logo"
-import QRCodeImg from "../components/qrCodeComponent";
-import BtnCopiarPix from "../components/BtnCopiar";
-import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal2 } from "../components/InfoTotal";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from "../../components/Logo";
+import QRCodeImg from "../../components/qrCodeComponent";
+import BtnVoltar from "../../components/BtnVoltar";
+import { ProgressoPix2 } from "../../components/ProgressoPix";
+import { InfoTotal2 } from "../../components/InfoTotal";
+import AccordionFuncionamento from "../../components/AccordionFunc";
+import { BtnCopiarPix2 } from "../../components/BtnCopiar";
 
-import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix4 } from "../components/ProgressoPix";
-import BtnVoltar from "../components/BtnVoltar";
-
-const QrCodePage4 = () => {
+const QrCodePage2 = () => {
     const nome = 'João';
 
     return (
@@ -39,7 +38,7 @@ const QrCodePage4 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.750,00 pelo Pix
+                        {nome}, pague a entrada de R$ 15.310,00 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -54,7 +53,7 @@ const QrCodePage4 = () => {
 
                     <QRCodeImg />
 
-                    <BtnCopiarPix />
+                    <BtnCopiarPix2 />
 
                     <BtnVoltar/>
 
@@ -82,7 +81,7 @@ const QrCodePage4 = () => {
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix4 />
+                    <ProgressoPix2 />
 
                     <InfoTotal2 />
 
@@ -155,4 +154,4 @@ const QrCodePage4 = () => {
     )
 }
 
-export default QrCodePage4
+export default QrCodePage2

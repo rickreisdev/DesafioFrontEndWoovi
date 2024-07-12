@@ -1,16 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material"
-import Logo from "../components/Logo"
-import QRCodeImg from "../components/qrCodeComponent";
-import BtnCopiarPix from "../components/BtnCopiar";
-import AccordionFuncionamento from "../components/AccordionFunc";
-import { InfoTotal3 } from "../components/InfoTotal";
+import logo from '../../assets/img/LogoEnd.svg'
+import Logo from "../../components/Logo";
+import QRCodeImg from "../../components/qrCodeComponent";
+
+import BtnVoltar from "../../components/BtnVoltar";
+import { ProgressoPix6 } from "../../components/ProgressoPix";
+import { InfoTotal6 } from "../../components/InfoTotal";
+import AccordionFuncionamento from "../../components/AccordionFunc";
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
+import { BtnCopiarPix6 } from "../../components/BtnCopiar";
 
-import logo from '../assets/img/LogoEnd.svg'
-import { ProgressoPix3 } from "../components/ProgressoPix";
-import BtnVoltar from "../components/BtnVoltar";
-
-const QrCodePage3 = () => {
+const QrCodePage6 = () => {
     const nome = 'João';
 
     return (
@@ -39,7 +39,7 @@ const QrCodePage3 = () => {
                         textAlign="center"
                         width="70%"
                     >
-                        {nome}, pague a entrada de R$ 15.450,00 pelo Pix
+                        {nome}, pague a entrada de R$ 15.900,01 pelo Pix
                     </Typography>
                 </Box>
             </div>
@@ -54,9 +54,9 @@ const QrCodePage3 = () => {
 
                     <QRCodeImg />
 
-                    <BtnCopiarPix />
+                    <BtnCopiarPix6 />
 
-                    <BtnVoltar/>
+                    <BtnVoltar />
 
                     <Typography
                         sx={{
@@ -82,9 +82,9 @@ const QrCodePage3 = () => {
                         <span>15/12/2021 - 08:17</span>
                     </Typography>
 
-                    <ProgressoPix3 />
+                    <ProgressoPix6 />
 
-                    <InfoTotal3 />
+                    <InfoTotal6 />
 
                     <Box
                         display="flex"
@@ -155,4 +155,4 @@ const QrCodePage3 = () => {
     )
 }
 
-export default QrCodePage3
+export default QrCodePage6
