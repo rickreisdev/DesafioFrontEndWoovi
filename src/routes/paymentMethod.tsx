@@ -7,7 +7,6 @@ const PaymentMethod = () => {
 
     return (
         <Grid
-            
             justifyContent="center"
             alignItems="center"
             style={{ height: "100vh", width: "100%" }}
