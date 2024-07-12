@@ -1,13 +1,14 @@
 import { Box } from "@mui/material";
-import qrCode from "../assets/img/qrCode.png"
+import qrCode from "../assets/img/qrCode.png";
 
 export default function QRCodeImg() {
     return (
         <Box
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-            }}>
+                display: "flex",
+                flexDirection: "column",
+            }}
+        >
             <Box
                 display="flex"
                 justifyContent="center"
@@ -20,5 +21,5 @@ export default function QRCodeImg() {
                 <img src={qrCode} alt="Qr Code" />
             </Box>
         </Box>
-    )
+    );
 }

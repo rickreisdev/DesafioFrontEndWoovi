@@ -1,10 +1,9 @@
 import { Button, Snackbar, IconButton, Alert } from "@mui/material";
-import FileCopyIcon from '@mui/icons-material/FileCopy';
-import CloseIcon from '@mui/icons-material/Close';
+import FileCopyIcon from "@mui/icons-material/FileCopy";
+import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 
 const BtnCopiarPix = () => {
     const [open, setOpen] = useState(false);
@@ -14,12 +13,15 @@ const BtnCopiarPix = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao');
+            navigate("/cartao");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -49,15 +51,15 @@ const BtnCopiarPix = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -70,13 +72,16 @@ const BtnCopiarPix = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix1 = () => {
     const [open, setOpen] = useState(false);
@@ -90,8 +95,11 @@ const BtnCopiarPix1 = () => {
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -121,15 +129,15 @@ const BtnCopiarPix1 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -142,13 +150,16 @@ const BtnCopiarPix1 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix2 = () => {
     const [open, setOpen] = useState(false);
@@ -158,12 +169,15 @@ const BtnCopiarPix2 = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao2');
+            navigate("/cartao2");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -193,15 +207,15 @@ const BtnCopiarPix2 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -214,13 +228,16 @@ const BtnCopiarPix2 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix3 = () => {
     const [open, setOpen] = useState(false);
@@ -230,12 +247,15 @@ const BtnCopiarPix3 = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao3');
+            navigate("/cartao3");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -265,15 +285,15 @@ const BtnCopiarPix3 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -286,13 +306,16 @@ const BtnCopiarPix3 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix4 = () => {
     const [open, setOpen] = useState(false);
@@ -302,12 +325,15 @@ const BtnCopiarPix4 = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao4');
+            navigate("/cartao4");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -337,15 +363,15 @@ const BtnCopiarPix4 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -358,13 +384,16 @@ const BtnCopiarPix4 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix5 = () => {
     const [open, setOpen] = useState(false);
@@ -374,12 +403,15 @@ const BtnCopiarPix5 = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao5');
+            navigate("/cartao5");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -409,15 +441,15 @@ const BtnCopiarPix5 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -430,13 +462,16 @@ const BtnCopiarPix5 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 const BtnCopiarPix6 = () => {
     const [open, setOpen] = useState(false);
@@ -446,12 +481,15 @@ const BtnCopiarPix6 = () => {
         setOpen(true);
 
         setTimeout(() => {
-            navigate('/cartao6');
+            navigate("/cartao6");
         }, 2000);
     };
 
-    const handleClose = (_event: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
+    const handleClose = (
+        _event: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === "clickaway") {
             return;
         }
 
@@ -481,15 +519,15 @@ const BtnCopiarPix6 = () => {
                 variant="contained"
                 endIcon={<FileCopyIcon />}
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '310px',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '10px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "310px",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "10px",
                 }}
             >
                 Clique para copiar o código
@@ -502,15 +540,23 @@ const BtnCopiarPix6 = () => {
                 action={action}
             >
                 <Alert
-                    severity="success" variant="filled" sx={{ width: '100%' }}>
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
                     Copiado com sucesso!
                 </Alert>
             </Snackbar>
         </div>
-    )
-}
+    );
+};
 
 export {
-    BtnCopiarPix, BtnCopiarPix1, BtnCopiarPix2,
-    BtnCopiarPix3, BtnCopiarPix4, BtnCopiarPix5, BtnCopiarPix6
+    BtnCopiarPix,
+    BtnCopiarPix1,
+    BtnCopiarPix2,
+    BtnCopiarPix3,
+    BtnCopiarPix4,
+    BtnCopiarPix5,
+    BtnCopiarPix6,
 };

@@ -1,19 +1,18 @@
-
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
-import { Button } from '@mui/material';
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import MenuItem from "@mui/material/MenuItem";
+import { Button } from "@mui/material";
 
 const FormComponent = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -24,12 +23,7 @@ const FormComponent = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -39,10 +33,10 @@ const FormComponent = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -50,11 +44,7 @@ const FormComponent = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -70,34 +60,33 @@ const FormComponent = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 const FormComponent2 = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -108,12 +97,7 @@ const FormComponent2 = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -123,10 +107,10 @@ const FormComponent2 = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -134,11 +118,7 @@ const FormComponent2 = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -154,34 +134,33 @@ const FormComponent2 = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 const FormComponent3 = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -192,12 +171,7 @@ const FormComponent3 = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -207,10 +181,10 @@ const FormComponent3 = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -218,11 +192,7 @@ const FormComponent3 = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -238,34 +208,33 @@ const FormComponent3 = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 const FormComponent4 = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -276,12 +245,7 @@ const FormComponent4 = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -291,10 +255,10 @@ const FormComponent4 = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -302,11 +266,7 @@ const FormComponent4 = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -322,34 +282,33 @@ const FormComponent4 = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 const FormComponent5 = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -360,12 +319,7 @@ const FormComponent5 = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -375,10 +329,10 @@ const FormComponent5 = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -386,11 +340,7 @@ const FormComponent5 = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -406,34 +356,33 @@ const FormComponent5 = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 const FormComponent6 = () => {
     return (
         <Box
             component="form"
             sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '424px',
-                '& .MuiTextField-root': { m: 1 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "424px",
+                "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
             autoComplete="off"
@@ -444,12 +393,7 @@ const FormComponent6 = () => {
                 id="outlined-required"
                 label="Nome completo"
             />
-            <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="CPF"
-            />
+            <TextField fullWidth required id="outlined-required" label="CPF" />
             <TextField
                 fullWidth
                 required
@@ -459,10 +403,10 @@ const FormComponent6 = () => {
 
             <Box
                 sx={{
-                    display: 'flex',
-                    alignItems: 'start',
-                    justifyContent: 'center',
-                    width: '424px',
+                    display: "flex",
+                    alignItems: "start",
+                    justifyContent: "center",
+                    width: "424px",
                 }}
             >
                 <TextField
@@ -470,11 +414,7 @@ const FormComponent6 = () => {
                     label="Vencimento"
                     type="text"
                 />
-                <TextField
-                    id="outlined-number"
-                    label="CVV"
-                    type="text"
-                />
+                <TextField id="outlined-number" label="CVV" type="text" />
             </Box>
 
             <TextField
@@ -490,25 +430,28 @@ const FormComponent6 = () => {
             <Button
                 variant="contained"
                 sx={{
-                    background: '#133A6F',
-                    fontSize: '18px',
-                    lineHeight: '24.55px',
-                    textTransform: 'none',
-                    width: '100%',
-                    height: '39px',
-                    borderRadius: '8px',
-                    mt: '20px',
-                    mb: '35px'
+                    background: "#133A6F",
+                    fontSize: "18px",
+                    lineHeight: "24.55px",
+                    textTransform: "none",
+                    width: "100%",
+                    height: "39px",
+                    borderRadius: "8px",
+                    mt: "20px",
+                    mb: "35px",
                 }}
             >
                 Pagar
             </Button>
-
         </Box>
     );
-}
+};
 
 export {
-    FormComponent, FormComponent2, FormComponent3,
-    FormComponent4, FormComponent5, FormComponent6
+    FormComponent,
+    FormComponent2,
+    FormComponent3,
+    FormComponent4,
+    FormComponent5,
+    FormComponent6,
 };

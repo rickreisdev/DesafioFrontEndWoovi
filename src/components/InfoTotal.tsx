@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 
-
 const InfoTotal = () => {
     return (
         <Box
@@ -10,9 +9,9 @@ const InfoTotal = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -23,11 +22,11 @@ const InfoTotal = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -35,19 +34,19 @@ const InfoTotal = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 30.600,00
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal1 = () => {
     return (
@@ -58,9 +57,9 @@ const InfoTotal1 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -71,11 +70,11 @@ const InfoTotal1 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -83,19 +82,19 @@ const InfoTotal1 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 30.500,00
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal2 = () => {
     return (
@@ -106,9 +105,9 @@ const InfoTotal2 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -119,11 +118,11 @@ const InfoTotal2 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -131,19 +130,19 @@ const InfoTotal2 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 30.620,01
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal3 = () => {
     return (
@@ -154,9 +153,9 @@ const InfoTotal3 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -167,11 +166,11 @@ const InfoTotal3 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -179,19 +178,19 @@ const InfoTotal3 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 30.900,00
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal4 = () => {
     return (
@@ -202,9 +201,9 @@ const InfoTotal4 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -215,11 +214,11 @@ const InfoTotal4 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -227,19 +226,19 @@ const InfoTotal4 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 31.500,00
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal5 = () => {
     return (
@@ -250,9 +249,9 @@ const InfoTotal5 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -263,11 +262,11 @@ const InfoTotal5 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -275,19 +274,19 @@ const InfoTotal5 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 31.699,98
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 const InfoTotal6 = () => {
     return (
@@ -298,9 +297,9 @@ const InfoTotal6 = () => {
             alignItems="center"
             mb="10px"
             sx={{
-                borderTop: '2px solid #E5E5E5',
-                borderBottom: '2px solid #E5E5E5',
-                py: '20px'
+                borderTop: "2px solid #E5E5E5",
+                borderBottom: "2px solid #E5E5E5",
+                py: "20px",
             }}
         >
             <Box
@@ -311,11 +310,11 @@ const InfoTotal6 = () => {
             >
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '14px',
-                        lineHeight: '19.1px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "14px",
+                        lineHeight: "19.1px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     CET: 0,5%
@@ -323,21 +322,26 @@ const InfoTotal6 = () => {
 
                 <Typography
                     sx={{
-                        color: '#4D4D4D',
-                        fontSize: '18px',
-                        lineHeight: '24.55px',
-                        fontWeight: '600',
-                        textTransform: 'none',
+                        color: "#4D4D4D",
+                        fontSize: "18px",
+                        lineHeight: "24.55px",
+                        fontWeight: "600",
+                        textTransform: "none",
                     }}
                 >
                     Total: R$ 31.800,02
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
 export {
-    InfoTotal, InfoTotal1, InfoTotal2, InfoTotal3, InfoTotal4,
-    InfoTotal5, InfoTotal6
+    InfoTotal,
+    InfoTotal1,
+    InfoTotal2,
+    InfoTotal3,
+    InfoTotal4,
+    InfoTotal5,
+    InfoTotal6,
 };

@@ -1,6 +1,6 @@
-import { Box, Grid, Typography } from "@mui/material"
-import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
-import logo from '../../assets/img/LogoEnd.svg'
+import { Box, Grid, Typography } from "@mui/material";
+import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
+import logo from "../../assets/img/LogoEnd.svg";
 import Logo from "../../components/Logo";
 import QRCodeImg from "../../components/qrCodeComponent";
 import BtnVoltar from "../../components/BtnVoltar";
@@ -10,14 +10,10 @@ import AccordionFuncionamento from "../../components/AccordionFunc";
 import { BtnCopiarPix3 } from "../../components/BtnCopiar";
 
 const QrCodePage3 = () => {
-    const nome = 'João';
+    const nome = "João";
 
     return (
-        <Grid
-            container
-            justifyContent="center"
-            alignItems="center"
-        >
+        <Grid container justifyContent="center" alignItems="center">
             <div className="header">
                 <Box
                     display="flex"
@@ -30,7 +26,7 @@ const QrCodePage3 = () => {
 
                     <Typography
                         mt={4}
-                        variant='h3'
+                        variant="h3"
                         fontWeight="800"
                         fontSize="24px"
                         lineHeight="32.74px"
@@ -50,20 +46,19 @@ const QrCodePage3 = () => {
                     justifyContent="center"
                     alignItems="center"
                 >
-
                     <QRCodeImg />
 
                     <BtnCopiarPix3 />
 
-                    <BtnVoltar/>
+                    <BtnVoltar />
 
                     <Typography
                         sx={{
-                            color: '#B2B2B2',
-                            fontSize: '16px',
-                            lineHeight: '21.82px',
-                            fontWeight: '600',
-                            textTransform: 'none',
+                            color: "#B2B2B2",
+                            fontSize: "16px",
+                            lineHeight: "21.82px",
+                            fontWeight: "600",
+                            textTransform: "none",
                         }}
                     >
                         Prazo de pagamento:
@@ -71,11 +66,11 @@ const QrCodePage3 = () => {
 
                     <Typography
                         sx={{
-                            color: '#4D4D4D',
-                            fontSize: '16px',
-                            lineHeight: '21.82px',
-                            fontWeight: '600',
-                            textTransform: 'none',
+                            color: "#4D4D4D",
+                            fontSize: "16px",
+                            lineHeight: "21.82px",
+                            fontWeight: "600",
+                            textTransform: "none",
                         }}
                     >
                         <span>15/12/2021 - 08:17</span>
@@ -98,11 +93,11 @@ const QrCodePage3 = () => {
 
                     <Typography
                         sx={{
-                            color: '#B2B2B2',
-                            fontSize: '14px',
-                            lineHeight: '19.1px',
-                            fontWeight: '600',
-                            textTransform: 'none',
+                            color: "#B2B2B2",
+                            fontSize: "14px",
+                            lineHeight: "19.1px",
+                            fontWeight: "600",
+                            textTransform: "none",
                         }}
                     >
                         Identificador:
@@ -110,11 +105,11 @@ const QrCodePage3 = () => {
 
                     <Typography
                         sx={{
-                            color: '#4D4D4D',
-                            fontSize: '14px',
-                            lineHeight: '19.1px',
-                            fontWeight: '600',
-                            textTransform: 'none',
+                            color: "#4D4D4D",
+                            fontSize: "14px",
+                            lineHeight: "19.1px",
+                            fontWeight: "600",
+                            textTransform: "none",
                         }}
                     >
                         <span>2c1b951f356c4680b13ba1c9fc889c47</span>
@@ -130,14 +125,14 @@ const QrCodePage3 = () => {
                         color="#B2B2B2"
                     >
                         <Box display="flex">
-                            <GppGoodOutlinedIcon fontSize='medium' />
+                            <GppGoodOutlinedIcon fontSize="medium" />
                         </Box>
 
                         <Box display="flex">
                             <Typography
                                 sx={{
-                                    fontSize: '14px',
-                                    lineHeight: '18px'
+                                    fontSize: "14px",
+                                    lineHeight: "18px",
                                 }}
                             >
                                 Pagamento 100% seguro via:
@@ -151,7 +146,7 @@ const QrCodePage3 = () => {
                 </Box>
             </div>
         </Grid>
-    )
-}
+    );
+};
 
-export default QrCodePage3
+export default QrCodePage3;
