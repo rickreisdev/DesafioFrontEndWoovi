@@ -11,7 +11,7 @@ const FormComponent = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -36,10 +36,11 @@ const FormComponent = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
@@ -85,7 +86,7 @@ const FormComponent2 = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -110,10 +111,11 @@ const FormComponent2 = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
@@ -159,7 +161,7 @@ const FormComponent3 = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -184,10 +186,11 @@ const FormComponent3 = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
@@ -233,7 +236,7 @@ const FormComponent4 = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -258,10 +261,11 @@ const FormComponent4 = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
@@ -307,7 +311,7 @@ const FormComponent5 = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -332,10 +336,11 @@ const FormComponent5 = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
@@ -381,7 +386,7 @@ const FormComponent6 = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "424px",
+                width: "85vw",
                 "& .MuiTextField-root": { m: 1 },
             }}
             noValidate
@@ -406,10 +411,11 @@ const FormComponent6 = () => {
                     display: "flex",
                     alignItems: "start",
                     justifyContent: "center",
-                    width: "424px",
+                    width: "100%",
                 }}
             >
                 <TextField
+                    fullWidth
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
