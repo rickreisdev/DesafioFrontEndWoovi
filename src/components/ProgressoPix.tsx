@@ -11,14 +11,14 @@ const ProgressoPix = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -82,7 +82,7 @@ const ProgressoPix = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -143,14 +143,14 @@ const ProgressoPix2 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -214,7 +214,7 @@ const ProgressoPix2 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -277,7 +277,7 @@ const ProgressoPix2 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -338,14 +338,14 @@ const ProgressoPix3 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -409,7 +409,7 @@ const ProgressoPix3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -461,7 +461,7 @@ const ProgressoPix3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -524,7 +524,7 @@ const ProgressoPix3 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -597,14 +597,14 @@ const ProgressoPix4 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -668,7 +668,7 @@ const ProgressoPix4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -731,7 +731,7 @@ const ProgressoPix4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -782,7 +782,7 @@ const ProgressoPix4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -845,7 +845,7 @@ const ProgressoPix4 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -918,14 +918,14 @@ const ProgressoPix5 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -989,7 +989,7 @@ const ProgressoPix5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1052,7 +1052,7 @@ const ProgressoPix5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1103,7 +1103,7 @@ const ProgressoPix5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1166,7 +1166,7 @@ const ProgressoPix5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1229,7 +1229,7 @@ const ProgressoPix5 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1302,14 +1302,14 @@ const ProgressoPix6 = () => {
                 mt="15px"
                 mb="25px"
                 gap="15px"
+                width="100vw"
             >
                 <Box
                     display="flex"
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    gap="160px"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1373,7 +1373,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1436,7 +1436,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1487,7 +1487,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1550,7 +1550,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1613,7 +1613,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"
@@ -1676,7 +1676,7 @@ const ProgressoPix6 = () => {
                     flexDirection="row"
                     justifyContent="space-between"
                     alignItems="center"
-                    width="100%"
+                    width="90%"
                 >
                     <Box
                         display="flex"

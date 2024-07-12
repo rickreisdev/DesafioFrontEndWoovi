@@ -8,6 +8,7 @@ const InfoTotal = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -18,7 +19,7 @@ const InfoTotal = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -56,6 +57,7 @@ const InfoTotal1 = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -66,7 +68,7 @@ const InfoTotal1 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -103,6 +105,7 @@ const InfoTotal2 = () => {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
+            width="100%"
             mb="10px"
             sx={{
                 borderTop: "2px solid #E5E5E5",
@@ -114,7 +117,7 @@ const InfoTotal2 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -152,6 +155,7 @@ const InfoTotal3 = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -162,7 +166,7 @@ const InfoTotal3 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -200,6 +204,7 @@ const InfoTotal4 = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -210,7 +215,7 @@ const InfoTotal4 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -248,6 +253,7 @@ const InfoTotal5 = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -258,7 +264,7 @@ const InfoTotal5 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{
@@ -296,6 +302,7 @@ const InfoTotal6 = () => {
             justifyContent="center"
             alignItems="center"
             mb="10px"
+            width="100%"
             sx={{
                 borderTop: "2px solid #E5E5E5",
                 borderBottom: "2px solid #E5E5E5",
@@ -306,7 +313,7 @@ const InfoTotal6 = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                gap="200px"
+                width="90%"
             >
                 <Typography
                     sx={{

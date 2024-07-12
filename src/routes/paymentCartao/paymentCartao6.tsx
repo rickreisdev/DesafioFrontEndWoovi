@@ -37,7 +37,7 @@ const PaymentCartao6 = () => {
                         textAlign="center"
                         width="85%"
                     >
-                        {nome}, pague o restante em 1x no cartão
+                        {nome}, pague o restante em 6x no cartão
                     </Typography>
                 </Box>
             </div>
