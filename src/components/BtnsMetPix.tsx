@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/img/LogoEnd.svg";
 import { Box, Button, Modal, Typography } from "@mui/material";
-import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import CheckIcon from "@mui/icons-material/Check";
 
 const BtnsMetPix = () => {
@@ -210,12 +208,13 @@ const BtnsMetPix = () => {
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
+                    width: "100vw",
                 }}
             >
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "137px",
                         border: isActive1
                             ? "2px solid #03D69D"
@@ -229,6 +228,10 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
                         }}
                     >
                         <Box
@@ -327,8 +330,8 @@ const BtnsMetPix = () => {
                             justifyContent="start"
                             paddingLeft="10px"
                             top="14px"
-                            left="-195px"
-                            width="387px"
+                            left="0px"
+                            width="95%"
                             height="33px"
                             sx={{
                                 background: "#133A6F",
@@ -340,7 +343,7 @@ const BtnsMetPix = () => {
                                 "::after": {
                                     position: "absolute",
                                     top: "-9px",
-                                    left: "377.5px",
+                                    left: "370px",
                                     content: '""',
                                     width: "0",
                                     height: "0",
@@ -369,7 +372,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "105px",
                         border: isActive
                             ? "2px solid #03D69D"
@@ -478,7 +481,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "100px",
                         border: isActive2
                             ? "2px solid #03D69D"
@@ -565,7 +568,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "137px",
                         border: isActive3
                             ? "2px solid #03D69D"
@@ -578,6 +581,10 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
                         }}
                     >
                         <Box
@@ -654,8 +661,8 @@ const BtnsMetPix = () => {
                             justifyContent="start"
                             paddingLeft="10px"
                             top="14px"
-                            left="-195px"
-                            width="387px"
+                            left="0px"
+                            width="95%"
                             height="33px"
                             sx={{
                                 background: "#133A6F",
@@ -667,7 +674,7 @@ const BtnsMetPix = () => {
                                 "::after": {
                                     position: "absolute",
                                     top: "-9px",
-                                    left: "377.5px",
+                                    left: "370px",
                                     content: '""',
                                     width: "0",
                                     height: "0",
@@ -695,7 +702,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "100px",
                         border: isActive4
                             ? "2px solid #03D69D"
@@ -782,7 +789,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "100px",
                         border: isActive5
                             ? "2px solid #03D69D"
@@ -869,7 +876,7 @@ const BtnsMetPix = () => {
                 <Button
                     sx={{
                         position: "relative",
-                        width: "429px",
+                        width: "97%",
                         height: "100px",
                         border: isActive6
                             ? "2px solid #03D69D"
@@ -953,34 +960,7 @@ const BtnsMetPix = () => {
                     </Box>
                 </Button>
 
-                <Box
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    gap="3px"
-                    mt="45px"
-                    mb="33px"
-                    color="#B2B2B2"
-                >
-                    <Box display="flex">
-                        <GppGoodOutlinedIcon fontSize="medium" />
-                    </Box>
-
-                    <Box display="flex">
-                        <Typography
-                            sx={{
-                                fontSize: "14px",
-                                lineHeight: "18px",
-                            }}
-                        >
-                            Pagamento 100% seguro via:
-                        </Typography>
-                    </Box>
-
-                    <Box display="flex">
-                        <img src={logo} alt="logo da woovi" />
-                    </Box>
-                </Box>
+                
             </Box>
 
             <Modal
