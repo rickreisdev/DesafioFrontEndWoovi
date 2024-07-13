@@ -17,6 +17,7 @@ const BtnsMetPix = () => {
 
     const handleModalClose = () => {
         setOpenModal(null);
+        setIsActive(false);
         setIsActive1(false);
         setIsActive2(false);
         setIsActive3(false);
@@ -226,145 +227,152 @@ const BtnsMetPix = () => {
                     onClick={() => handleButtonClick1(1)}
                 >
                     <Box
+                        position="absolute"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        top="-15px"
+                        left="12px"
+                        width="67px"
+                        height="28px"
+                        ml="5px"
+                        sx={{
+                            background: "#E5E5E5",
+                            borderRadius: "100px",
+                            color: "#4D4D4D",
+                            fontWeight: "800",
+                            textTransform: "capitalize",
+                            fontSize: "18px",
+                            lineHeight: "24px",
+                        }}
+                    >
+                        Pix
+                    </Box>
+
+                    <Box
                         sx={{
                             position: "relative",
                             width: "100%",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
                         }}
                     >
                         <Box
-                            position="absolute"
                             display="flex"
                             alignItems="center"
-                            justifyContent="center"
-                            top="-83px"
-                            left="-194px"
-                            width="67px"
-                            height="28px"
-                            sx={{
-                                background: "#E5E5E5",
-                                borderRadius: "100px",
-                                color: "#4D4D4D",
-                                fontWeight: "800",
-                                textTransform: "capitalize",
-                                fontSize: "18px",
-                                lineHeight: "24px",
-                            }}
-                        >
-                            Pix
-                        </Box>
-
-                        <Box
-                            sx={{
-                                position: "absolute",
-                            }}
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive1
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                    <span>1x</span> R$ 30.500,00
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#03D69D",
+                                        fontSize: "16px",
+                                        lineHeight: "20px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Ganhe <span>3%</span> de Cashback
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>1x</span> R$ 30.500,00
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#03D69D",
-                                    fontSize: "16px",
-                                    lineHeight: "20px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Ganhe <span>3%</span> de Cashback
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive1
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
 
-                        <Box
-                            position="absolute"
-                            display="flex"
-                            alignItems="center"
-                            gap="5px"
-                            justifyContent="start"
-                            paddingLeft="10px"
-                            top="14px"
-                            left="0px"
-                            width="95%"
-                            height="33px"
-                            sx={{
-                                background: "#133A6F",
-                                fontSize: "16px",
-                                lineHeight: "20px",
-                                textTransform: "capitalize",
-                                color: "white",
-                                borderRadius: "5px",
-                                "::after": {
-                                    position: "absolute",
-                                    top: "-9px",
-                                    left: "370px",
-                                    content: '""',
-                                    width: "0",
-                                    height: "0",
-                                    borderTop: "25px solid transparent",
-                                    borderBottom: "25px solid transparent",
-                                    borderRight: "25px solid white",
-                                },
-                            }}
-                        >
-                            <span>🤑R$ 300,00</span>
-                            <Typography
+                        {/* faixa azul começa */}
+                        <Box position="relative" width="100%">
+                            <Box
+                                display="flex"
+                                alignItems="center"
+                                gap="5px"
+                                paddingLeft="10px"
+                                marginTop="10px"
+                                width="95%"
+                                height="33px"
                                 sx={{
+                                    background: "#133A6F",
                                     fontSize: "16px",
                                     lineHeight: "20px",
-                                    textTransform: "lowercase",
+                                    textTransform: "capitalize",
                                     color: "white",
+                                    borderRadius: "5px",
+                                    position: "relative",
                                 }}
                             >
-                                de volta no seu <span className="pix">Pix</span>{" "}
-                                na hora
-                            </Typography>
+                                <span>🤑R$ 300,00</span>
+                                <Typography
+                                    sx={{
+                                        fontSize: "16px",
+                                        lineHeight: "20px",
+                                        textTransform: "lowercase",
+                                        color: "white",
+                                    }}
+                                >
+                                    de volta no seu{" "}
+                                    <span className="pix">Pix</span> na hora
+                                </Typography>
+                            </Box>
+
+                            <Box
+                                sx={{
+                                    content: '""',
+                                    position: "absolute",
+                                    top: "2%",
+                                    right: "0",
+                                    left: "94%",
+                                    width: "0",
+                                    height: "0",
+                                    borderTop: "17px solid transparent",
+                                    borderBottom: "17px solid transparent",
+                                    borderRight: "17px solid white",
+                                }}
+                            ></Box>
                         </Box>
                     </Box>
                 </Button>
@@ -383,97 +391,102 @@ const BtnsMetPix = () => {
                     onClick={() => handleButtonClick(0)}
                 >
                     <Box
+                        position="absolute"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        top="-15px"
+                        left="12px"
+                        width="157px"
+                        height="28px"
+                        ml="5px"
+                        sx={{
+                            background: "#E5E5E5",
+                            borderRadius: "100px",
+                            color: "#4D4D4D",
+                            fontWeight: "800",
+                            textTransform: "capitalize",
+                            fontSize: "18px",
+                            lineHeight: "24px",
+                        }}
+                    >
+                        Pix + Cartão
+                    </Box>
+
+                    <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
                         }}
                     >
                         <Box
-                            position="absolute"
                             display="flex"
                             alignItems="center"
-                            justifyContent="center"
-                            top="-65px"
-                            left="-194px"
-                            width="157px"
-                            height="28px"
-                            sx={{
-                                background: "#E5E5E5",
-                                borderRadius: "100px",
-                                color: "#4D4D4D",
-                                fontWeight: "800",
-                                textTransform: "capitalize",
-                                fontSize: "18px",
-                                lineHeight: "24px",
-                            }}
-                        >
-                            Pix Parcelado
-                        </Box>
-
-                        <Box
-                            sx={{
-                                position: "absolute",
-                                mt: "25px",
-                            }}
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                R$ 15.300,00 + <span>1x</span> R$ 15.300,00
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 30.600,00
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>2x</span> R$ 15.300,00
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 30.600,00
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Button>
@@ -494,73 +507,77 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
                         }}
                     >
                         <Box
-                            sx={{
-                                position: "absolute",
-                                mt: "25px",
-                            }}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive2
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                R$ 15.310,00 + <span>2x</span> R$ 10.206,67
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 30.620,01
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>3x</span> R$ 10.206,67
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 30.620,01
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive2
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Button>
@@ -582,119 +599,125 @@ const BtnsMetPix = () => {
                         sx={{
                             position: "relative",
                             width: "100%",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
                         }}
                     >
                         <Box
-                            sx={{
-                                position: "absolute",
-                            }}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive3
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                R$ 15.450,00 + <span>3x</span> R$ 7.725,00
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 30.900,00
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>4x</span> R$ 7.725,00
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 30.900,00
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive3
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
 
-                        <Box
-                            position="absolute"
-                            display="flex"
-                            alignItems="center"
-                            gap="5px"
-                            justifyContent="start"
-                            paddingLeft="10px"
-                            top="14px"
-                            left="0px"
-                            width="95%"
-                            height="33px"
-                            sx={{
-                                background: "#133A6F",
-                                fontSize: "16px",
-                                lineHeight: "20px",
-                                textTransform: "capitalize",
-                                color: "white",
-                                borderRadius: "5px",
-                                "::after": {
-                                    position: "absolute",
-                                    top: "-9px",
-                                    left: "370px",
-                                    content: '""',
-                                    width: "0",
-                                    height: "0",
-                                    borderTop: "25px solid transparent",
-                                    borderBottom: "25px solid transparent",
-                                    borderRight: "25px solid white",
-                                },
-                            }}
-                        >
-                            <span> -3% de juros:</span>
-                            <Typography
+                        {/* faixa azul começa */}
+                        <Box position="relative" width="100%">
+                            <Box
+                                display="flex"
+                                alignItems="center"
+                                gap="5px"
+                                paddingLeft="10px"
+                                marginTop="10px"
+                                width="97%"
+                                height="33px"
                                 sx={{
+                                    background: "#133A6F",
                                     fontSize: "16px",
                                     lineHeight: "20px",
-                                    textTransform: "none",
+                                    textTransform: "capitalize",
                                     color: "white",
+                                    borderRadius: "5px",
+                                    position: "relative",
                                 }}
                             >
-                                Melhor opção de parcelamento
-                            </Typography>
+                                <span> -3% de juros:</span>
+                                <Typography
+                                    sx={{
+                                        fontSize: "16px",
+                                        lineHeight: "20px",
+                                        textTransform: "none",
+                                        color: "white",
+                                    }}
+                                >
+                                    Melhor opção de parcelamento
+                                </Typography>
+                            </Box>
+
+                            <Box
+                                sx={{
+                                    content: '""',
+                                    position: "absolute",
+                                    top: "1%",
+                                    right: "0",
+                                    left: "96%",
+                                    width: "0",
+                                    height: "0",
+                                    borderTop: "17px solid transparent",
+                                    borderBottom: "17px solid transparent",
+                                    borderRight: "17px solid white",
+                                }}
+                            ></Box>
                         </Box>
                     </Box>
                 </Button>
@@ -715,73 +738,77 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
                         }}
                     >
                         <Box
-                            sx={{
-                                position: "absolute",
-                                mt: "25px",
-                            }}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive4
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                   R$ 15.750,00 + <span>4x</span> R$ 6.300,00
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 31.500,00
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>5x</span> R$ 6.300,00
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 31.500,00
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive4
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Button>
@@ -802,73 +829,77 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
                         }}
                     >
                         <Box
-                            sx={{
-                                position: "absolute",
-                                mt: "25px",
-                            }}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive5
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                R$ 15.849,99 + <span>5x</span> R$ 5.283,33
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 31.699,98
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>6x</span> R$ 5.283,33
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 31.699,98
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive5
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Button>
@@ -889,78 +920,80 @@ const BtnsMetPix = () => {
                     <Box
                         sx={{
                             position: "relative",
+                            width: "100%",
                         }}
                     >
                         <Box
-                            sx={{
-                                position: "absolute",
-                                mt: "25px",
-                            }}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
                         >
                             <Box
                                 display="flex"
-                                alignItems="center"
-                                justifyContent="center"
-                                position="absolute"
-                                top="-45px"
-                                left="160px"
-                                width="26px"
-                                height="26px"
-                                sx={{
-                                    border: "2px solid #E5E5E5",
-                                    borderRadius: "100px",
-                                    background: isActive6
-                                        ? "#03D69D"
-                                        : "transparent",
-                                    transition: ".2s ease",
-                                }}
+                                flexDirection="column"
+                                alignItems="start"
+                                ml="5px"
                             >
-                                <CheckIcon
-                                    fontSize="small"
+                                <Typography
                                     sx={{
-                                        color: "white",
+                                        color: "#4D4D4D",
+                                        fontSize: "20px",
+                                        lineHeight: "28px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
                                     }}
-                                />
+                                >
+                                    R$ 15.900,01 + <span>6x</span> R$ 4.542,86
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        color: "#AFAFAF",
+                                        fontSize: "16px",
+                                        lineHeight: "21.82px",
+                                        fontWeight: "600",
+                                        textTransform: "capitalize",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    Total: R$ 31.800.02
+                                </Typography>
                             </Box>
 
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-45px",
-                                    left: "-195px",
-                                    color: "#4D4D4D",
-                                    fontSize: "24px",
-                                    lineHeight: "28px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                width="10%"
                             >
-                                <span>7x</span> R$ 4.542,86
-                            </Typography>
-
-                            <Typography
-                                sx={{
-                                    position: "absolute",
-                                    width: "100%",
-                                    top: "-15px",
-                                    left: "-195px",
-                                    color: "#AFAFAF",
-                                    fontSize: "16px",
-                                    lineHeight: "21.82px",
-                                    fontWeight: "600",
-                                    textTransform: "capitalize",
-                                    whiteSpace: "nowrap",
-                                }}
-                            >
-                                Total: R$ 31.800,02
-                            </Typography>
+                                <Box
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    top="-45px"
+                                    left="160px"
+                                    width="26px"
+                                    height="26px"
+                                    sx={{
+                                        border: "2px solid #E5E5E5",
+                                        borderRadius: "100px",
+                                        background: isActive6
+                                            ? "#03D69D"
+                                            : "transparent",
+                                        transition: ".2s ease",
+                                    }}
+                                >
+                                    <CheckIcon
+                                        fontSize="small"
+                                        sx={{
+                                            color: "white",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
                 </Button>
-
-                
             </Box>
 
             <Modal
