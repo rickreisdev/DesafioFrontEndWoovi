@@ -365,7 +365,7 @@ const BtnsMetPix = () => {
                                     position: "absolute",
                                     top: "2%",
                                     right: "0",
-                                    left: "94%",
+                                    left: "94.5%",
                                     width: "0",
                                     height: "0",
                                     borderTop: "17px solid transparent",
@@ -440,7 +440,7 @@ const BtnsMetPix = () => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                R$ 15.300,00 + <span>1x</span> R$ 15.300,00
+                                    R$ 15.300,00 + <span>1x</span> R$ 15.300,00
                                 </Typography>
 
                                 <Typography
@@ -531,7 +531,7 @@ const BtnsMetPix = () => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                R$ 15.310,00 + <span>2x</span> R$ 10.206,67
+                                    R$ 15.310,00 + <span>2x</span> R$ 10.206,67
                                 </Typography>
 
                                 <Typography
@@ -622,7 +622,7 @@ const BtnsMetPix = () => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                R$ 15.450,00 + <span>3x</span> R$ 7.725,00
+                                    R$ 15.450,00 + <span>3x</span> R$ 7.725,00
                                 </Typography>
 
                                 <Typography
@@ -676,28 +676,39 @@ const BtnsMetPix = () => {
                             <Box
                                 display="flex"
                                 alignItems="center"
-                                gap="5px"
                                 paddingLeft="10px"
                                 marginTop="10px"
                                 width="97%"
                                 height="33px"
                                 sx={{
                                     background: "#133A6F",
-                                    fontSize: "16px",
-                                    lineHeight: "20px",
+                                    fontSize: "15px",
+                                    lineHeight: "15px",
                                     textTransform: "capitalize",
                                     color: "white",
                                     borderRadius: "5px",
                                     position: "relative",
                                 }}
                             >
-                                <span> -3% de juros:</span>
                                 <Typography
                                     sx={{
-                                        fontSize: "16px",
+                                        fontSize: "15.5px",
+                                        lineHeight: "15px",
+                                        textTransform: "none",
+                                        color: "white",
+                                        width: "40%",
+                                    }}
+                                >
+                                    <span> -3% de juros:</span>
+                                </Typography>
+
+                                <Typography
+                                    sx={{
+                                        fontSize: "15.5px",
                                         lineHeight: "20px",
                                         textTransform: "none",
                                         color: "white",
+                                        width: "97%",
                                     }}
                                 >
                                     Melhor opção de parcelamento
@@ -710,7 +721,7 @@ const BtnsMetPix = () => {
                                     position: "absolute",
                                     top: "1%",
                                     right: "0",
-                                    left: "96%",
+                                    left: "96.6%",
                                     width: "0",
                                     height: "0",
                                     borderTop: "17px solid transparent",
@@ -762,7 +773,7 @@ const BtnsMetPix = () => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                   R$ 15.750,00 + <span>4x</span> R$ 6.300,00
+                                    R$ 15.750,00 + <span>4x</span> R$ 6.300,00
                                 </Typography>
 
                                 <Typography
@@ -853,7 +864,7 @@ const BtnsMetPix = () => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                R$ 15.849,99 + <span>5x</span> R$ 5.283,33
+                                    R$ 15.849,99 + <span>5x</span> R$ 5.283,33
                                 </Typography>
 
                                 <Typography
