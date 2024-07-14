@@ -345,15 +345,16 @@ const BtnsMetPix = () => {
                                     position: "relative",
                                 }}
                             >
-                                <span>🤑R$ 300,00</span>
                                 <Typography
                                     sx={{
-                                        fontSize: "16px",
-                                        lineHeight: "20px",
-                                        textTransform: "lowercase",
+                                        fontSize: "15.5px",
+                                        lineHeight: "15px",
+                                        textTransform: "none",
                                         color: "white",
+                                        width: "97%",
                                     }}
                                 >
+                                    <span>🤑R$ 915,00 </span>
                                     de volta no seu{" "}
                                     <span className="pix">Pix</span> na hora
                                 </Typography>
@@ -696,21 +697,10 @@ const BtnsMetPix = () => {
                                         lineHeight: "15px",
                                         textTransform: "none",
                                         color: "white",
-                                        width: "40%",
-                                    }}
-                                >
-                                    <span> -3% de juros:</span>
-                                </Typography>
-
-                                <Typography
-                                    sx={{
-                                        fontSize: "15.5px",
-                                        lineHeight: "20px",
-                                        textTransform: "none",
-                                        color: "white",
                                         width: "97%",
                                     }}
                                 >
+                                    <span> -3% de juros: </span>
                                     Melhor opção de parcelamento
                                 </Typography>
                             </Box>
