@@ -22,13 +22,54 @@ const FormComponent = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -44,8 +85,36 @@ const FormComponent = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
@@ -54,6 +123,18 @@ const FormComponent = () => {
                 label="Parcelas"
                 defaultValue="1x"
                 fullWidth
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             >
                 <MenuItem value="1x">1x de R$ 15.300,00</MenuItem>
             </TextField>
@@ -97,13 +178,54 @@ const FormComponent2 = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -119,8 +241,36 @@ const FormComponent2 = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
@@ -172,13 +322,54 @@ const FormComponent3 = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -194,8 +385,36 @@ const FormComponent3 = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
@@ -247,13 +466,54 @@ const FormComponent4 = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -269,8 +529,36 @@ const FormComponent4 = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
@@ -322,13 +610,54 @@ const FormComponent5 = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -344,8 +673,36 @@ const FormComponent5 = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
@@ -397,13 +754,54 @@ const FormComponent6 = () => {
                 required
                 id="outlined-required"
                 label="Nome completo"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
-            <TextField fullWidth required id="outlined-required" label="CPF" />
+            <TextField
+                fullWidth
+                required
+                id="outlined-required"
+                label="CPF"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
+            />
             <TextField
                 fullWidth
                 required
                 id="outlined-required"
                 label="Número do cartão"
+                sx={{
+                    "& .MuiOutlinedInput-root": {
+                        "&.Mui-focused fieldset": {
+                            borderColor: "#03D69D",
+                        },
+                    },
+                    "& .MuiInputLabel-root": {
+                        "&.Mui-focused": {
+                            color: "#03D69D",
+                        },
+                    },
+                }}
             />
 
             <Box
@@ -419,8 +817,36 @@ const FormComponent6 = () => {
                     id="outlined-password-input"
                     label="Vencimento"
                     type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
                 />
-                <TextField id="outlined-number" label="CVV" type="text" />
+                <TextField
+                    id="outlined-number"
+                    label="CVV"
+                    type="text"
+                    sx={{
+                        "& .MuiOutlinedInput-root": {
+                            "&.Mui-focused fieldset": {
+                                borderColor: "#03D69D",
+                            },
+                        },
+                        "& .MuiInputLabel-root": {
+                            "&.Mui-focused": {
+                                color: "#03D69D",
+                            },
+                        },
+                    }}
+                />
             </Box>
 
             <TextField
