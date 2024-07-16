@@ -61,30 +61,6 @@ const PaymentCartao = () => {
 
                 <BtnVoltar2 />
 
-                <Typography
-                    sx={{
-                        color: "#B2B2B2",
-                        fontSize: "16px",
-                        lineHeight: "21.82px",
-                        fontWeight: "600",
-                        textTransform: "none",
-                    }}
-                >
-                    Prazo de pagamento:
-                </Typography>
-
-                <Typography
-                    sx={{
-                        color: "#4D4D4D",
-                        fontSize: "16px",
-                        lineHeight: "21.82px",
-                        fontWeight: "600",
-                        textTransform: "none",
-                    }}
-                >
-                    <span>15/12/2021 - 08:17</span>
-                </Typography>
-
                 <ProgressoCartaoParc />
 
                 <InfoTotalParc />
