@@ -55,6 +55,7 @@ const PaymentMethod = () => {
                         mt="5px"
                         mb="33px"
                         color="#B2B2B2"
+                        data-testid="seguro-box"
                     >
                         <Box display="flex">
                             <GppGoodOutlinedIcon fontSize="medium" />

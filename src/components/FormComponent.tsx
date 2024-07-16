@@ -8,7 +8,7 @@ import BtnPagar from "./BtnPagar";
 interface Valores {
     nome: string;
     cpf: string;
-    numeroCartao: number;
+    numeroCartao: string;
     dataVenc: string;
     cvv: string;
     parcelas: string;
@@ -19,12 +19,15 @@ const FormComponent = () => {
         control,
         handleSubmit,
         formState: { errors },
-    } = useForm<Valores>();
+        setValue,
+    } = useForm<Valores>({
+
+    });
 
     const { atualizarValorEntrada } = useValorContext();
 
     const handleSelectParcela = (
-        event: React.ChangeEvent<{ value: unknown }>
+        event: React.ChangeEvent<{value: unknown}>,
     ) => {
         const valorParcela = event.target.value as string;
         let valorEntrada = "";
@@ -53,6 +56,7 @@ const FormComponent = () => {
         }
 
         atualizarValorEntrada(valorEntrada);
+        setValue("parcelas", valorParcela)
 
         console.log("ValorEntrada: ", valorEntrada);
     };
