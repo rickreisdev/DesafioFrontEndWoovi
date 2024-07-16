@@ -8,6 +8,8 @@ Este é o repositório da minha versão do teste/desafio para a vaga de front-en
 - Material UI (MUI)
 - react-router-dom
 - react-hook-form
+- vitest
+- testing-library
 
 ## Descrição do Desafio
 
