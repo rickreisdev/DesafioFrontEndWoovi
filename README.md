@@ -21,10 +21,8 @@ O desafio consiste na replicação de um design fornecido, conforme as seguintes
 ## Navegação do Projeto
 
 - **Página Inicial (/**): Página que exibe as opções de pagamento em Pix à vista ou parcelamento de Pix + Cartão para o cliente.
-- **Página de QR Code (/qr-code*)**: Página que exibe o QR Code para pagamento da entrada do valor.
-- **Página de Formulário do Cartão (/cartao*)**: Página que exibe o formulário para o cliente preencher os dados do cartão para pagar as demais parcelas do valor.
-
-> \*As rotas das páginas de QR Code e de Cartão terminam com o índice da opção de cartão escolhida, sendo que a primeira opção de parcela não possui um índice e as demais vão de 2 até 6.
+- **Página de QR Code (/qr-code e /qr-code-parc)**: Página que exibe o QR Code para pagamento da entrada do valor.
+- **Página de Formulário do Cartão (/cartao)**: Página que exibe o formulário para o cliente preencher os dados do cartão para pagar as demais parcelas do valor.
 
 ## Executando o Projeto
 
