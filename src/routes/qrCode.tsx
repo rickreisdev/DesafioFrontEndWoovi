@@ -8,10 +8,34 @@ import BtnVoltar from "../components/BtnVoltar";
 import { ProgressoPix } from "../components/ProgressoPix";
 import { InfoTotal, InfoTotalParc } from "../components/InfoTotal";
 import AccordionFuncionamento from "../components/AccordionFunc";
-
+import { useEffect, useState } from "react";
 
 const QrCodePageParc = () => {
     const nome = "João";
+    const [tempoRestante, setTempoRestante] = useState(300);
+
+    useEffect(() => {
+        const intervalo = setInterval(() => {
+            setTempoRestante((prevTempo) => {
+                if (prevTempo > 0) {
+                    return prevTempo - 1;
+                } else {
+                    clearInterval(intervalo);
+                    return prevTempo;
+                }
+            });
+        }, 1000);
+
+        return () => clearInterval(intervalo);
+    }, []);
+
+    const formatTempo = (segundos: number) => {
+        const minutos = Math.floor(segundos / 60);
+        const segundosRestantes = segundos % 60;
+        return `${
+            minutos > 0 ? `${minutos} minuto${minutos !== 1 ? "s" : ""} e ` : ""
+        }${segundosRestantes} segundo${segundosRestantes !== 1 ? "s" : ""}`;
+    };
 
     return (
         <Grid container justifyContent="center" alignItems="center">
@@ -47,7 +71,7 @@ const QrCodePageParc = () => {
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <QRCodeImg />
+                    {tempoRestante > 0 && <QRCodeImg />}
 
                     <BtnCopiarPixParc />
 
@@ -74,7 +98,11 @@ const QrCodePageParc = () => {
                             textTransform: "none",
                         }}
                     >
-                        <span>15/12/2021 - 08:17</span>
+                        <span>
+                            {tempoRestante > 0
+                                ? formatTempo(tempoRestante)
+                                : "Tempo esgotado"}
+                        </span>
                     </Typography>
 
                     <ProgressoPix />
@@ -152,6 +180,30 @@ const QrCodePageParc = () => {
 
 const QrCodePage = () => {
     const nome = "João";
+    const [tempoRestante, setTempoRestante] = useState(300);
+
+    useEffect(() => {
+        const intervalo = setInterval(() => {
+            setTempoRestante((prevTempo) => {
+                if (prevTempo > 0) {
+                    return prevTempo - 1;
+                } else {
+                    clearInterval(intervalo);
+                    return prevTempo;
+                }
+            });
+        }, 1000);
+
+        return () => clearInterval(intervalo);
+    }, []);
+
+    const formatTempo = (segundos: number) => {
+        const minutos = Math.floor(segundos / 60);
+        const segundosRestantes = segundos % 60;
+        return `${
+            minutos > 0 ? `${minutos} minuto${minutos !== 1 ? "s" : ""} e ` : ""
+        }${segundosRestantes} segundo${segundosRestantes !== 1 ? "s" : ""}`;
+    };
 
     return (
         <Grid container justifyContent="center" alignItems="center">
@@ -187,7 +239,7 @@ const QrCodePage = () => {
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <QRCodeImg />
+                    {tempoRestante > 0 && <QRCodeImg />}
 
                     <BtnCopiarPix />
 
@@ -212,9 +264,14 @@ const QrCodePage = () => {
                             lineHeight: "21.82px",
                             fontWeight: "600",
                             textTransform: "none",
+                            mb: '20px'
                         }}
                     >
-                        <span>15/12/2021 - 08:17</span>
+                        <span>
+                            {tempoRestante > 0
+                                ? formatTempo(tempoRestante)
+                                : "Tempo esgotado"}
+                        </span>
                     </Typography>
 
                     <InfoTotal />
@@ -288,7 +345,4 @@ const QrCodePage = () => {
     );
 };
 
-export {
-    QrCodePageParc,
-    QrCodePage
-};
+export { QrCodePageParc, QrCodePage };
