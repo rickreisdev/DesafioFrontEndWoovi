@@ -16,7 +16,7 @@ export default function AccordionFuncionamento() {
             >
                 <AccordionSummary expandIcon={<KeyboardArrowDownIcon />}>
                     <Typography fontSize="16px" lineHeight="21.82px">
-                        <span>Como funciona?</span>
+                        <span>Como funciona o Woovi Parcelado?</span>
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

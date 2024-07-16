@@ -1,14 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
-import logo from "../../assets/img/LogoEnd.svg";
-import Logo from "../../components/Logo";
-import { ProgressoCartao2 } from "../../components/ProgressoCartao";
-import { InfoTotal } from "../../components/InfoTotal";
-import AccordionFuncionamento from "../../components/AccordionFunc";
-import { FormComponent2 } from "../../components/FormComponent";
-import BtnVoltar2 from "../../components/BtnVoltar2";
+import logo from "../assets/img/LogoEnd.svg";
+import Logo from "../components/Logo";
+import FormComponent from "../components/FormComponent";
+import BtnVoltar2 from "../components/BtnVoltar2";
+import { InfoTotalParc } from "../components/InfoTotal";
+import AccordionFuncionamento from "../components/AccordionFunc";
+import { ProgressoCartaoParc } from "../components/ProgressoCartao";
 
-const PaymentCartao2 = () => {
+const PaymentCartao = () => {
     const nome = "João";
 
     return (
@@ -37,7 +37,7 @@ const PaymentCartao2 = () => {
                         textAlign="center"
                         width="85%"
                     >
-                        {nome}, pague o restante em 2x no cartão
+                        {nome}, agora pague o restante no cartão
                     </Typography>
                 </Box>
             </div>
@@ -55,7 +55,7 @@ const PaymentCartao2 = () => {
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <FormComponent2 />
+                        <FormComponent />
                     </Box>
                 </div>
 
@@ -85,9 +85,9 @@ const PaymentCartao2 = () => {
                     <span>15/12/2021 - 08:17</span>
                 </Typography>
 
-                <ProgressoCartao2 />
+                <ProgressoCartaoParc />
 
-                <InfoTotal />
+                <InfoTotalParc />
 
                 <Box
                     display="flex"
@@ -157,4 +157,4 @@ const PaymentCartao2 = () => {
     );
 };
 
-export default PaymentCartao2;
+export default PaymentCartao;

@@ -1035,7 +1035,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
@@ -1090,7 +1090,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code1")}
+                            onClick={() => navigate("qr-code")}
                             color="success"
                             variant="contained"
                         >
@@ -1146,7 +1146,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code2")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
@@ -1202,7 +1202,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code3")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
@@ -1258,7 +1258,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code4")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
@@ -1314,7 +1314,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code5")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
@@ -1370,7 +1370,7 @@ const BtnsMetPix = () => {
                         gap="10px"
                     >
                         <Button
-                            onClick={() => navigate("qr-code6")}
+                            onClick={() => navigate("qr-code-parc")}
                             color="success"
                             variant="contained"
                         >
