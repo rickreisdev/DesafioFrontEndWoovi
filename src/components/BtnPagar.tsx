@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 
 const BtnPagar = () => {
+
     return (
         <>
             <Button
@@ -16,11 +17,11 @@ const BtnPagar = () => {
                     borderRadius: "8px",
                     mt: "20px",
                     mb: "35px",
-                    transition: '.2s ease',
+                    transition: ".2s ease",
 
-                    '&:hover':{
+                    "&:hover": {
                         background: "#03D69D",
-                    }
+                    },
                 }}
             >
                 Pagar

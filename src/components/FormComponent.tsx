@@ -1,9 +1,13 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { useValorContext } from "../contexts/valorContext";
 import BtnPagar from "./BtnPagar";
+import { useNavigate } from "react-router-dom";
+import { Modal, Typography } from "@mui/material";
+import { useState } from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 interface Valores {
     nome: string;
@@ -15,19 +19,27 @@ interface Valores {
 }
 
 const FormComponent = () => {
+    const [openModal, setOpenModal] = useState(false);
+
+    const handleClose = () => {
+        setOpenModal(false);
+    };
+
+    setTimeout(() => {
+        handleClose();
+    }, 5000);
+
     const {
         control,
         handleSubmit,
         formState: { errors },
         setValue,
-    } = useForm<Valores>({
-
-    });
+    } = useForm<Valores>({});
 
     const { atualizarValorEntrada } = useValorContext();
 
     const handleSelectParcela = (
-        event: React.ChangeEvent<{value: unknown}>,
+        event: React.ChangeEvent<{ value: unknown }>
     ) => {
         const valorParcela = event.target.value as string;
         let valorEntrada = "";
@@ -56,13 +68,20 @@ const FormComponent = () => {
         }
 
         atualizarValorEntrada(valorEntrada);
-        setValue("parcelas", valorParcela)
+        setValue("parcelas", valorParcela);
 
         console.log("ValorEntrada: ", valorEntrada);
     };
 
-    const onSubmit = (data: Valores) => {
+    const navigate = useNavigate();
+    const onSubmit: SubmitHandler<Valores> = (data) => {
         console.log(data);
+
+        setOpenModal(true);
+
+        setTimeout(() => {
+            navigate("/");
+        }, 2000);
     };
 
     const formatCPF = (value: string) => {
@@ -129,143 +148,93 @@ const FormComponent = () => {
     };
 
     return (
-        <Box
-            component="form"
-            sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                width: "85vw",
-                "& .MuiTextField-root": { m: 1 },
-            }}
-            noValidate
-            autoComplete="off"
-            onSubmit={handleSubmit(onSubmit)}
-        >
-            <Controller
-                name="nome"
-                control={control}
-                rules={{ required: "Nome completo é obrigatório" }}
-                render={({ field }) => (
-                    <TextField
-                        {...field}
-                        fullWidth
-                        required
-                        label="Nome completo"
-                        error={!!errors.nome}
-                        helperText={errors.nome ? errors.nome.message : ""}
-                        sx={{
-                            "& .MuiOutlinedInput-root": {
-                                "&.Mui-focused fieldset": {
-                                    borderColor: "#03D69D",
-                                },
-                            },
-                            "& .MuiInputLabel-root": {
-                                "&.Mui-focused": {
-                                    color: "#03D69D",
-                                },
-                            },
-                        }}
-                    />
-                )}
-            />
-            <Controller
-                name="cpf"
-                control={control}
-                rules={{
-                    required: "CPF é obrigatório",
-                    pattern: {
-                        value: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/,
-                        message: "O CPF deve estar no formato correto",
-                    },
-                }}
-                render={({ field }) => (
-                    <TextField
-                        fullWidth
-                        {...field}
-                        required
-                        label="CPF"
-                        error={!!errors.cpf}
-                        helperText={errors.cpf ? errors.cpf.message : ""}
-                        onChange={(e) => {
-                            handleCPFChange(e);
-                            field.onChange(e);
-                        }}
-                        sx={{
-                            "& .MuiOutlinedInput-root": {
-                                "&.Mui-focused fieldset": {
-                                    borderColor: "#03D69D",
-                                },
-                            },
-                            "& .MuiInputLabel-root": {
-                                "&.Mui-focused": {
-                                    color: "#03D69D",
-                                },
-                            },
-                        }}
-                    />
-                )}
-            />
-
-            <Controller
-                name="numeroCartao"
-                control={control}
-                rules={{
-                    required: "Número do cartão é obrigatório",
-                    pattern: {
-                        value: /^\d{4} \d{4} \d{4} \d{4}$/,
-                        message: "Número do cartão inválido",
-                    },
-                }}
-                render={({ field }) => (
-                    <TextField
-                        {...field}
-                        fullWidth
-                        required
-                        label="Número do cartão"
-                        error={!!errors.numeroCartao}
-                        helperText={
-                            errors.numeroCartao
-                                ? errors.numeroCartao.message
-                                : ""
-                        }
-                        onChange={(e) => {
-                            handleNumCartaoChange(e);
-                            field.onChange(e);
-                        }}
-                        sx={{
-                            "& .MuiOutlinedInput-root": {
-                                "&.Mui-focused fieldset": {
-                                    borderColor: "#03D69D",
-                                },
-                            },
-                            "& .MuiInputLabel-root": {
-                                "&.Mui-focused": {
-                                    color: "#03D69D",
-                                },
-                            },
-                        }}
-                    />
-                )}
-            />
-
+        <>
             <Box
+                component="form"
                 sx={{
                     display: "flex",
-                    alignItems: "start",
-                    justifyContent: "center",
-                    width: "100%",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    width: "85vw",
+                    "& .MuiTextField-root": { m: 1 },
                 }}
+                noValidate
+                autoComplete="off"
+                onSubmit={handleSubmit(onSubmit)}
             >
                 <Controller
-                    name="dataVenc"
+                    name="nome"
+                    control={control}
+                    rules={{ required: "Nome completo é obrigatório" }}
+                    render={({ field }) => (
+                        <TextField
+                            {...field}
+                            fullWidth
+                            required
+                            label="Nome completo"
+                            error={!!errors.nome}
+                            helperText={errors.nome ? errors.nome.message : ""}
+                            sx={{
+                                "& .MuiOutlinedInput-root": {
+                                    "&.Mui-focused fieldset": {
+                                        borderColor: "#03D69D",
+                                    },
+                                },
+                                "& .MuiInputLabel-root": {
+                                    "&.Mui-focused": {
+                                        color: "#03D69D",
+                                    },
+                                },
+                            }}
+                        />
+                    )}
+                />
+                <Controller
+                    name="cpf"
                     control={control}
                     rules={{
-                        required: "Data de vencimento é obrigatória",
+                        required: "CPF é obrigatório",
                         pattern: {
-                            value: /^\d{2}\/\d{4}$/,
-                            message:
-                                "A data de venciemnto deve estar no formato MM/AAAA",
+                            value: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/,
+                            message: "O CPF deve estar no formato correto",
+                        },
+                    }}
+                    render={({ field }) => (
+                        <TextField
+                            fullWidth
+                            {...field}
+                            required
+                            label="CPF"
+                            error={!!errors.cpf}
+                            helperText={errors.cpf ? errors.cpf.message : ""}
+                            onChange={(e) => {
+                                handleCPFChange(e);
+                                field.onChange(e);
+                            }}
+                            sx={{
+                                "& .MuiOutlinedInput-root": {
+                                    "&.Mui-focused fieldset": {
+                                        borderColor: "#03D69D",
+                                    },
+                                },
+                                "& .MuiInputLabel-root": {
+                                    "&.Mui-focused": {
+                                        color: "#03D69D",
+                                    },
+                                },
+                            }}
+                        />
+                    )}
+                />
+
+                <Controller
+                    name="numeroCartao"
+                    control={control}
+                    rules={{
+                        required: "Número do cartão é obrigatório",
+                        pattern: {
+                            value: /^\d{4} \d{4} \d{4} \d{4}$/,
+                            message: "Número do cartão inválido",
                         },
                     }}
                     render={({ field }) => (
@@ -273,14 +242,15 @@ const FormComponent = () => {
                             {...field}
                             fullWidth
                             required
-                            label="Vencimento"
-                            type="text"
-                            error={!!errors.dataVenc}
+                            label="Número do cartão"
+                            error={!!errors.numeroCartao}
                             helperText={
-                                errors.dataVenc ? errors.dataVenc.message : ""
+                                errors.numeroCartao
+                                    ? errors.numeroCartao.message
+                                    : ""
                             }
                             onChange={(e) => {
-                                handleDtVencChange(e);
+                                handleNumCartaoChange(e);
                                 field.onChange(e);
                             }}
                             sx={{
@@ -298,28 +268,118 @@ const FormComponent = () => {
                         />
                     )}
                 />
+
+                <Box
+                    sx={{
+                        display: "flex",
+                        alignItems: "start",
+                        justifyContent: "center",
+                        width: "100%",
+                    }}
+                >
+                    <Controller
+                        name="dataVenc"
+                        control={control}
+                        rules={{
+                            required: "Data de vencimento é obrigatória",
+                            pattern: {
+                                value: /^\d{2}\/\d{4}$/,
+                                message:
+                                    "A data de venciemnto deve estar no formato MM/AAAA",
+                            },
+                        }}
+                        render={({ field }) => (
+                            <TextField
+                                {...field}
+                                fullWidth
+                                required
+                                label="Vencimento"
+                                type="text"
+                                error={!!errors.dataVenc}
+                                helperText={
+                                    errors.dataVenc
+                                        ? errors.dataVenc.message
+                                        : ""
+                                }
+                                onChange={(e) => {
+                                    handleDtVencChange(e);
+                                    field.onChange(e);
+                                }}
+                                sx={{
+                                    "& .MuiOutlinedInput-root": {
+                                        "&.Mui-focused fieldset": {
+                                            borderColor: "#03D69D",
+                                        },
+                                    },
+                                    "& .MuiInputLabel-root": {
+                                        "&.Mui-focused": {
+                                            color: "#03D69D",
+                                        },
+                                    },
+                                }}
+                            />
+                        )}
+                    />
+                    <Controller
+                        name="cvv"
+                        control={control}
+                        rules={{
+                            required: "CVV é obrigatório",
+                            pattern: {
+                                value: /^\d{3}$/,
+                                message: "CVV inválido",
+                            },
+                        }}
+                        render={({ field }) => (
+                            <TextField
+                                {...field}
+                                id="outlined-number"
+                                label="CVV"
+                                type="text"
+                                error={!!errors.cvv}
+                                helperText={
+                                    errors.cvv ? errors.cvv.message : ""
+                                }
+                                onChange={(e) => {
+                                    handleCvvChange(e);
+                                    field.onChange(e);
+                                }}
+                                sx={{
+                                    "& .MuiOutlinedInput-root": {
+                                        "&.Mui-focused fieldset": {
+                                            borderColor: "#03D69D",
+                                        },
+                                    },
+                                    "& .MuiInputLabel-root": {
+                                        "&.Mui-focused": {
+                                            color: "#03D69D",
+                                        },
+                                    },
+                                }}
+                            />
+                        )}
+                    />
+                </Box>
+
                 <Controller
-                    name="cvv"
+                    name="parcelas"
                     control={control}
                     rules={{
-                        required: "CVV é obrigatório",
-                        pattern: {
-                            value: /^\d{3}$/,
-                            message: "CVV inválido",
-                        },
+                        required: "Selecione o número de parcelas",
                     }}
                     render={({ field }) => (
                         <TextField
                             {...field}
-                            id="outlined-number"
-                            label="CVV"
-                            type="text"
-                            error={!!errors.cvv}
-                            helperText={errors.cvv ? errors.cvv.message : ""}
-                            onChange={(e) => {
-                                handleCvvChange(e);
-                                field.onChange(e);
-                            }}
+                            id="outlined-select-parcelas"
+                            select
+                            required
+                            label="Parcelas"
+                            error={!!errors.parcelas}
+                            helperText={
+                                errors.parcelas ? errors.parcelas.message : ""
+                            }
+                            fullWidth
+                            onChange={handleSelectParcela}
                             sx={{
                                 "& .MuiOutlinedInput-root": {
                                     "&.Mui-focused fieldset": {
@@ -332,59 +392,61 @@ const FormComponent = () => {
                                     },
                                 },
                             }}
-                        />
+                        >
+                            <MenuItem value="1x">1x de R$ 15.300,00</MenuItem>
+                            <MenuItem value="2x">2x de R$ 7.655,00</MenuItem>
+                            <MenuItem value="3x">3x de R$ 5.150,00</MenuItem>
+                            <MenuItem value="4x">4x de R$ 3.937,50</MenuItem>
+                            <MenuItem value="5x">5x de R$ 3.169,99</MenuItem>
+                            <MenuItem value="6x">6x de R$ 2.650,00</MenuItem>
+                        </TextField>
                     )}
                 />
+
+                <BtnPagar />
             </Box>
 
-            <Controller
-                name="parcelas"
-                control={control}
-                rules={{
-                    required: "Selecione o número de parcelas",
-                }}
-                render={({ field }) => (
-                    <TextField
-                        {...field}
-                        id="outlined-select-parcelas"
-                        select
-                        required
-                        label="Parcelas"
-                        error={!!errors.parcelas}
-                        helperText={
-                            errors.parcelas
-                                ? errors.parcelas.message
-                                : ""
-                        }
-                        fullWidth
-                        onChange={handleSelectParcela}
-                        sx={{
-                            "& .MuiOutlinedInput-root": {
-                                "&.Mui-focused fieldset": {
-                                    borderColor: "#03D69D",
-                                },
-                            },
-                            "& .MuiInputLabel-root": {
-                                "&.Mui-focused": {
-                                    color: "#03D69D",
-                                },
-                            },
-                        }}
+            <Modal
+                open={openModal}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    sx={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        width: "70%",
+                        bgcolor: "#F4FBF9",
+                        border: "2px solid #03D69D",
+                        borderRadius: "10px",
+                        boxShadow: 5,
+                        p: 3,
+                        gap: "5px",
+                    }}
+                >
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        justifyItems="center"
+                        gap="10px"
+                        color="#03D69D"
                     >
-                        <MenuItem value="1x">1x de R$ 15.300,00</MenuItem>
-                        <MenuItem value="2x">2x de R$ 7.655,00</MenuItem>
-                        <MenuItem value="3x">3x de R$ 5.150,00</MenuItem>
-                        <MenuItem value="4x">4x de R$ 3.937,50</MenuItem>
-                        <MenuItem value="5x">5x de R$ 3.169,99</MenuItem>
-                        <MenuItem value="6x">6x de R$ 2.650,00</MenuItem>
-                    </TextField>
-                )}
-            />
+                        <CheckCircleIcon fontSize="large" />
+                    </Box>
 
-            <BtnPagar />
-        </Box>
+                    <Typography variant="h6" textAlign="center">
+                        Pagamento concluído com sucesso!
+                    </Typography>
+                </Box>
+            </Modal>
+        </>
     );
 };
-
 
 export default FormComponent;
