@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/styles/global.css";
+import "./assets/styles/footer.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme.ts";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

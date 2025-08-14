@@ -3,6 +3,7 @@ import Logo from "../components/Logo";
 import BtnMetodoPix from "../components/BtnsMetPix";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import logo from "../assets/img/LogoEnd.svg";
+import Footer from "../components/Footer";
 
 const PaymentMethod = () => {
     const nome = "João";
@@ -78,6 +79,8 @@ const PaymentMethod = () => {
                     </Box>
                 </Box>
             </div>
+
+            <Footer />
         </Grid>
     );
 };
