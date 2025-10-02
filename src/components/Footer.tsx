@@ -14,7 +14,7 @@ export default function Footer() {
                 paddingBottom={2}
             >
                 <span>{year} | Desenvolvido por </span>
-                <a href="http://rickreis.dev.br" target="_blank" rel="noopener noreferrer">
+                <a href="http://rickreis.com.br/dev" target="_blank" rel="noopener noreferrer">
                     <img
                         src={rickreislogo}
                         alt="Rick Reis Logo"
